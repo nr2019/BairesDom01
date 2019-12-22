@@ -1,0 +1,28 @@
+[
+    {
+        "title" : "Inicio",
+        "url"   : "/mi-home",
+        "icon"  : "home"
+    },
+    {
+        "title" : "Servicios",
+        "url"   : "/mi-servicios",
+        "icon"  : "hammer"
+    },
+    {
+        "title" : "Portfolio",
+        "url"   : "/mi-portfolio",
+        "icon"  : "brush"
+    },
+    {
+        "title" : "Nosotros",
+        "url"   : "/mi-nosotros",
+        "icon"  : "person"
+    },
+    {
+        "title" : "Contacto",
+        "url"   : "/mi-contacto",
+        "icon"  : "contact"
+    }
+
+  ]

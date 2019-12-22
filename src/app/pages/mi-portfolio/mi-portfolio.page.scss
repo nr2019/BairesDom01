@@ -1,0 +1,36 @@
+.images{
+    align-content: center !important;
+    margin-bottom: 50px !important;
+}
+.mi-images{
+    height: 200px !important;
+    width: 400px  !important;
+    object-fit: cover !important;
+    align-content: center !important;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+    //content: '';
+    background-color: black;
+    border-radius: 60px 20px;
+    border: 2px solid red;
+}
+
+.recuadro{
+    margin-bottom: 50px;
+}
+
+
+ion-slides {
+    margin-top: 5%;
+    background: #e6e6e6;
+
+    img {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+
+.mi-portfolio{
+    margin-bottom: 50px !important;
+}

@@ -1,0 +1,100 @@
+<app-header  [navitems]="nav" [valor]="valor" ></app-header>
+
+<ion-content>
+    <div class="mi-nosotros-container animated fadeIn ">
+        <ion-grid >
+            <ion-row>
+                <ion-col size="12">
+                    <h1 class="animated fadeIn slow " text-center>  BairesDom</h1>
+                </ion-col>
+            </ion-row>
+            
+            <ion-row>
+                <ion-col size="12">
+                    <div class="mi-nosotros-img-container">
+                        <img class="mi-nosotros-img animated fadeIn slow" src="../../../assets/img/mi-nosotros.jpg" >
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <ion-row>
+                <ion-col size="12">
+                        <h2 class="subraya">Una empresa construída con sueños</h2>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="12"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aperiam minus explicabo qui nobis ab voluptatem omnis quo, error dolorum sunt. Alias itaque aliquam earum ab eaque laborum mollitia corporis.</p></ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="12">
+                    <div class="mi-nosotros-mision-container">
+                      <h1>Nuestra Misión</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa quaerat sint corporis, doloribus reprehenderit ducimus dicta doloremque aut sed explicabo eum fuga porro ipsum molestias, accusantium necessitatibus alias laudantium!</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="12">
+                    <div class="mi-nosotros-vision-container">
+                      <h1>Nuestra Visión</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa quaerat sint corporis, doloribus reprehenderit ducimus dicta doloremque aut sed explicabo eum fuga porro ipsum molestias, accusantium necessitatibus alias laudantium!</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="12">
+                    <div class="mi-nosotros-objetivos-container">
+                      <h1>Nuestros Objetivos</h1>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa quaerat sint corporis, doloribus reprehenderit ducimus dicta doloremque aut sed explicabo eum fuga porro ipsum molestias, accusantium necessitatibus alias laudantium!</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+        <div class="mi-nosotros-amigos">
+            <!--ion-list>
+                <ion-list-header>
+                    <h1>Recorremos nuestro camnio junto a</h1>
+                </ion-list-header>
+
+                <ion-item *ngFor="let amigo of amigos | async">
+                    <ion-avatar class="mi-nosotros-avatar" slot="start">
+                        <img [src]="amigo.imagen">
+                    </ion-avatar>
+                    <ion-label class="mi-nosotros-texto">
+                        <h2>{{amigo.empresa}}</h2>
+                        <p>{{amigo.descripcion}}</p>
+                        <a [href]="amigo.url" target="_blank">{{amigo.url}}</a>
+                    
+                    </ion-label>
+                </ion-item>
+
+             </ion-list-->
+             <ion-list #lista>
+                <ion-list-header>
+                    <h1>Recorremos nuestro camnio junto a</h1>
+                </ion-list-header>
+                <ion-item-sliding *ngFor="let amigo of amigos | async">
+                    <ion-item >
+                        <ion-avatar class="mi-nosotros-avatar" slot="start">
+                            <img [src]="amigo.imagen">
+                        </ion-avatar>
+                        <ion-label class="mi-nosotros-texto">
+                            <h2>{{amigo.empresa}}</h2>
+                            <p>{{amigo.descripcion}}</p>
+                            <a [href]="amigo.url" target="_blank">{{amigo.url}}</a>
+                        
+                        </ion-label>
+                    </ion-item>
+                    <ion-item-options side="end">
+        
+                    <ion-item-option color="secondary" (click)="llamar(amigo.telefono)">
+                        <ion-icon slot="icon-only" name="call"></ion-icon>
+                    </ion-item-option>
+            
+                    </ion-item-options>
+                </ion-item-sliding>
+             </ion-list>
+        </div>
+    </div>
+    <app-footer class="footer"></app-footer>
+</ion-content>

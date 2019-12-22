@@ -1,0 +1,28 @@
+[
+    {
+        "title" : "Monaje industrial",
+        "url"   : "/home",
+        "icon"  : "nuclear"
+    },
+    {
+        "title" : "Metalmecánica",
+        "url"   : "/chat",
+        "icon"  : "cog"
+    },
+    {
+        "title" : "Construcción",
+        "url"   : "/contacts",
+        "icon"  : "construct"
+    },
+    {
+        "title" : "Hogar",
+        "url"   : "/contacts",
+        "icon"  : "home"
+    },
+    {
+        "title" : "Contacto",
+        "url"   : "/contacts",
+        "icon"  : "contact"
+    }
+
+  ]

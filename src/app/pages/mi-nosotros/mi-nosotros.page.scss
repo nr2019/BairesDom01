@@ -1,0 +1,188 @@
+.subraya {
+    text-decoration: underline black;
+}
+
+.mi-nosotros-container{
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 3% !important; 
+    margin-bottom: 5%; // Aplicar media porque en el celu el footer tapa el list del bottom
+        @media (max-width: 1200px) {
+            margin-bottom: 5%;
+        }
+        
+        @media (max-width: 800px) {
+            margin-bottom: 7%;
+        }
+    
+        @media (max-width: 560px) {
+            margin-bottom: 10%;
+           
+        }
+    margin-right: 3% !important;
+    margin-left: 3% !important;
+}
+
+.mi-nosotros-img-container{
+    margin-top: 5%;
+    height: 200px;
+}
+
+.mi-nosotros-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover !important;
+    //border-radius: 20px 20px !important;
+}
+
+.mi-nosotros-amigos{
+    //margin-right: 3% !important;
+    //margin-left: 3% !important;
+}
+
+.mi-nosotros-avatar {
+   // width: 150px !important;
+    //height: 150px !important;
+
+    @media (min-width: 1200px) {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    @media (max-width: 1200px) {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    
+    @media (max-width: 800px) {
+        width: 80px !important;
+        height: 80px !important;
+    }
+
+    @media (max-width: 560px) {
+        width: 50px !important;
+        height: 50px !important;
+    }
+}
+
+
+ion-label{
+    h2{
+        font-size: 20px;
+        margin-left: 3%;
+        @media (max-width: 1200px) {
+            font-size: 20px;
+        }
+        
+        @media (max-width: 800px) {
+            font-size: 18px;
+        }
+    
+        @media (max-width: 560px) {
+            font-size: 16px;
+           
+        }
+    }
+    p{
+        font-size: 18px;
+        margin-left: 3%;
+        font-style: italic;
+        
+        @media (max-width: 1200px) {
+            font-size: 18px;
+        }
+        
+        @media (max-width: 800px) {
+            font-size: 16px;
+        }
+    
+        @media (max-width: 560px) {
+            font-size: 14px;
+           
+        }
+    }
+    a{
+        font-size: 20px;
+        margin-left: 3%;
+        @media (max-width: 1200px) {
+            font-size: 20px;
+        }
+        
+        @media (max-width: 800px) {
+            font-size: 18px;
+        }
+    
+        @media (max-width: 560px) {
+            font-size: 15px;
+           
+        }
+    }
+
+}
+
+
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  .animated.slow {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+  .mi-nosotros-mision-container {
+    height: 150px;
+  }
+
+  .mi-nosotros-vision-container {
+    height: 150px;
+  }
+
+  .mi-nosotros-objetivos-container {
+    height: 150px;
+  }
+
+  ion-list-header{
+  margin-bottom: 30px;}

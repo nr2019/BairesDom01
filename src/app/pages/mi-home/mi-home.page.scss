@@ -1,0 +1,31 @@
+.my-custom-menu {
+    --width: 500px;
+}
+
+.mi-home{
+  height: 100vh;
+  content: "";
+  background-color: #99FF33 !important;
+}
+
+// Grid presentación
+.mi-grid{
+  width: 100% !important;
+}
+.mi-titulo{
+  border: 2px solid black;
+  height: 20vh !important;
+  background-color: lightgray;
+}
+
+.mi-desc{
+  border: 2px solid black;
+  height: 60vh !important;
+  background-color: lightgray;
+}
+
+.mi-img{
+  border: 2px solid black;
+  height: 60vh !important;
+  background-color: lightgray;
+}

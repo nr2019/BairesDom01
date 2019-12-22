@@ -1,5 +1,7 @@
 {
   "name": "bdm01",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

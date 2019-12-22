@@ -1,0 +1,32 @@
+.btn{
+    border: 1px solid black;
+    //background-color: lightgray;
+    border-radius: 2em;
+    @media (max-width: 1200px) {
+        
+    }
+    
+    @media (max-width: 800px) {
+        
+    }
+
+    @media (max-width: 560px) {
+        visibility: hidden;
+    }
+
+}
+
+
+.header-grid{
+    @media (max-width: 1200px) {
+        
+    }
+    
+    @media (max-width: 800px) {
+        
+    }
+
+    @media (max-width: 500px) {
+        visibility: hidden;
+    }
+}

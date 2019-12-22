@@ -1,0 +1,22 @@
+<app-header  [navitems]="nav" [valor]="valor" ></app-header>
+
+<ion-content >
+
+   <h1>Portfolio</h1>
+   <ion-item-divider>
+    
+  </ion-item-divider>
+
+    <div class="mi-portfolio" *ngFor="let p of galeriaFull">
+        <ion-slides mode="ios" 
+                    [options]="sliderOpts">
+            <ion-slide *ngFor="let l of p.galeria">
+           
+                <img class="mi-images" [src]="l.imagen" tappable (click)="openPreview(l.imagen)"><img>
+                <label > {{l.id}}</label>
+            </ion-slide>
+        </ion-slides>
+    </div>
+    
+    <app-footer class="footer"></app-footer>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header no-border>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+
+        <ion-grid fixed class="header-grid" *ngIf="valor == true">
+            <ion-row>
+                <ion-col *ngFor="let item of navitems | async">
+                    <ion-button size="small" shape="round" fill="outline" color="dark" [routerLink]="item.url">
+                        <ion-icon slot="start" [name]="item.icon"></ion-icon>
+                        {{item.title}}
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+        <ion-button *ngIf="valor == false" shape="round" fill="outline" color="dark" expand="full" (click)="menu()">
+            Menú
+        </ion-button> 
+    </ion-toolbar>
+</ion-header>     
