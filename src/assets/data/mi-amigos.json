@@ -12,7 +12,12 @@
         "empresa"   : "Soldadura acero 2",
         "descripcion"  : "Soldadura acero  1Soldadura acero 1Soldadura acero 1Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido",
         "imagen" : "./assets/img/mi-amigos-02.jpg",
+<<<<<<< HEAD
         "url" : "www.infobae.com"
+=======
+        "url" : "www.infobae.com",
+        "telefono" : "4444-4444"
+>>>>>>> 172d4f5e31d5414211ba80e6dbe037cd951f1110
     },
     {
         "id" : "3",
@@ -22,4 +27,8 @@
         "url" : "www.infobae.com",
         "telefono" : "4444-4444"
     }
+<<<<<<< HEAD
 ]
+=======
+]
+>>>>>>> 172d4f5e31d5414211ba80e6dbe037cd951f1110

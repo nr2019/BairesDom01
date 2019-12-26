@@ -6,8 +6,8 @@
 
         <ion-grid fixed class="header-grid" *ngIf="valor == true">
             <ion-row>
-                <ion-col *ngFor="let item of navitems | async">
-                    <ion-button size="small" shape="round" fill="outline" color="dark" [routerLink]="item.url">
+                <ion-col *ngFor="let item of navitems | async" size="2" size-lg="2" size-md="4" size-sm="6" size-xs="6" >
+                    <ion-button size="small" shape="round" color="dark" [routerLink]="item.url">
                         <ion-icon slot="start" [name]="item.icon"></ion-icon>
                         {{item.title}}
                     </ion-button>
@@ -15,7 +15,7 @@
             </ion-row>
         </ion-grid>
 
-        <ion-button *ngIf="valor == false" shape="round" fill="outline" color="dark" expand="full" (click)="menu()">
+        <ion-button *ngIf="valor == false" shape="round"  color="dark" expand="full" (click)="menu()">
             Menú
         </ion-button> 
     </ion-toolbar>
