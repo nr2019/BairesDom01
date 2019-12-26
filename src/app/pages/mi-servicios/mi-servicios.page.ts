@@ -12,7 +12,7 @@ import { MiSrvService } from '../../services/mi-srv.service';
   styleUrls: ['./mi-servicios.page.scss'],
 })
 export class MiServiciosPage implements OnInit {
-
+  id: any; //IMiServicios;
   nav: Observable<InavMi[]>;
   servicios: Observable<IMiServicios[]>;
   valor: boolean;
@@ -54,9 +54,13 @@ export class MiServiciosPage implements OnInit {
     this.servicios = this.miService.getServicios();
   }
 
-  cardClick(servicio) {
-    this.titulo = servicio.titulo;
+  cardClick(servicio: IMiServicios) {
+    console.log(servicio);
+
+/*    this.titulo = servicio.titulo;
     this.descripcion = servicio.descripcion;
-    this.imagen = servicio.imagen;
+    this.imagen = servicio.imagen;*/
+    this.id = servicio;
+    console.log(this.id);
   }
 }

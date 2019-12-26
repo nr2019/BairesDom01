@@ -3,16 +3,34 @@ import { HttpClient } from '@angular/common/http';
 import { IMiServicios } from '../interfaces/imi-servicios';
 import { IMiGaleria, IMiGaleriaFull } from '../interfaces/imi-galeria';
 import { IMiAmigos } from '../interfaces/imi-amigos';
+import { analyzeAndValidateNgModules } from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MiSrvService {
-  todo: IMiGaleriaFull[] = [];
+  //todo: IMiGaleriaFull[] = [];
+  servicios: any;
+
   constructor(private http: HttpClient) { }
 
   getServicios(){
-    return this.http.get<IMiServicios[]>('./assets/data/mi-servicios.json');
+    this.servicios = this.http.get<IMiServicios[]>('./assets/data/mi-servicios.json');
+    return this.servicios;
+    //return this.http.get<IMiServicios[]>('./assets/data/mi-servicios.json');
+  }
+
+  buscarServicio( id: number ): IMiServicios[] {
+    console.log(id);
+    let respuesta: any;
+
+    // se recorre toda la lista de servicios
+    for( let servicio of this.servicios ){
+       if ( servicio.id === id ){
+        respuesta = servicio;
+       }
+    }
+    return respuesta;
   }
 
   getGaleria() {
