@@ -9,21 +9,14 @@ import { MiSrvService } from '../../services/mi-srv.service';
 })
 export class MiServicioComponent implements OnInit{
  
-  @Input() titulo: string = '';
-  @Input() descripcion: string = '';
-  @Input() imagen: string = '';
-  @Input() id: any; //IMiServicios;
+  //@Input() titulo: string = '';
+  //@Input() descripcion: string = '';
+  //@Input() imagen: string = '';
+  @Input() srvClick: IMiServicios; //any;
 
-  //servicios: Observable<IMiServicios[]>;
-//  servicios: any;
   constructor(private miService: MiSrvService) {}
 
   ngOnInit() {
-    //console.log(this.miCard);
-    //console.log(this.id)
-    //console.log("antes")
-    //this.servicios = this.miService.buscarServicio( this.id );
-    //console.log(this.servicios);
   }
 
 

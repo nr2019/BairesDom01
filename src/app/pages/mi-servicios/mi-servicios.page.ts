@@ -12,25 +12,22 @@ import { MiSrvService } from '../../services/mi-srv.service';
   styleUrls: ['./mi-servicios.page.scss'],
 })
 export class MiServiciosPage implements OnInit {
-  id: any; //IMiServicios;
+  mostrarServicio: boolean = false; //Al hacer click en un servicio se activa para que sea mostrado el componente "servicio"
+  srvClick: IMiServicios; //any; 
   nav: Observable<InavMi[]>;
   servicios: Observable<IMiServicios[]>;
-  valor: boolean;
-  cantSlide: number;
-  opcionesSlide: string;
-  titulo: string;
-  descripcion: string;
-  imagen: string;
-
-  slideOpts = {
+  valor: boolean; // Identifica que slide mostrar dependiendo la resolución
+  // Opciones para slide grande
+  //opcionesSlide: string;
+  slideOptsGrande = {
     slidesPerView: 7.3,
     freeMode: true,
   };
-  slideOpts2 = {
-    slidesPerView: 2.3,
+  // Opciones para slide chico
+  slideOptsChico = {
+    slidesPerView: 1.3,
     freeMode: true,
   };
-
 
   constructor(private navService: NavService,
               private miService: MiSrvService,
@@ -43,11 +40,11 @@ export class MiServiciosPage implements OnInit {
     if ( this.platform.width() < 560 ) {
       //chico
       this.valor = false;
-      this.opcionesSlide = 'slideOpts2';
-    } else{
+     // this.opcionesSlide = 'slideOptsChico';
+    } else {
       // grande
       this.valor = true;
-      this.opcionesSlide = 'slideOpts';
+     // this.opcionesSlide = 'slideOptsGrande';
     }
 
     //Carga de servicios
@@ -55,12 +52,7 @@ export class MiServiciosPage implements OnInit {
   }
 
   cardClick(servicio: IMiServicios) {
-    console.log(servicio);
-
-/*    this.titulo = servicio.titulo;
-    this.descripcion = servicio.descripcion;
-    this.imagen = servicio.imagen;*/
-    this.id = servicio;
-    console.log(this.id);
+    this.mostrarServicio = true;
+    this.srvClick = servicio;
   }
 }

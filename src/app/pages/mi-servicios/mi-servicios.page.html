@@ -1,38 +1,33 @@
 <app-header  [navitems]="nav" [valor]="valor" ></app-header>
 
 <ion-content>
-    <ion-slides  [options]= "slideOpts" *ngIf="valor == true">
-        <ion-slide *ngFor="let servicio of servicios | async">
-            <ion-card > 
-                <!--ion-img [src]="servicio.imagen"  (click)="cardClick(servicio)"></!--ion-img-->
-                <img [src]="servicio.imagen" (click)="cardClick(servicio)">
-                <ion-card-header>
-                    <ion-card-title (click)="cardClick(servicio)">Madison, WI</ion-card-title>
-                    <ion-card-subtitle>Destination</ion-card-subtitle>
-                </ion-card-header>
-            </ion-card>
-        </ion-slide>
-    </ion-slides>
+    <div class="slide-srv">
+        <ion-slides  [options]= "slideOptsGrande" *ngIf="valor == true" >
+            <ion-slide *ngFor="let servicio of servicios | async">
+                <ion-card > 
+                    <img [src]="servicio.imagen" (click)="cardClick(servicio)">
+                    <ion-card-header>
+                        <ion-card-title (click)="cardClick(servicio)">{{servicio.titulo}}</ion-card-title>
+                        <ion-card-subtitle>{{servicio.subtitulo}}</ion-card-subtitle>
+                    </ion-card-header>
+                </ion-card>
+            </ion-slide>
+        </ion-slides>
 
-    <ion-slides  [options]= "slideOpts2" *ngIf="valor == false">
-        <ion-slide *ngFor="let servicio of servicios | async">
-            <ion-card >
-                <!--ion-img [src]="servicio.imagen" (click)="cardClick(servicio)" ></!--ion-img-->
-                
-                <img [src]="servicio.imagen" (click)="cardClick(servicio)">
-                <ion-card-header>
-                    <ion-card-title (click)="cardClick(servicio)">Madison, WI</ion-card-title>
-                    <ion-card-subtitle>Destination</ion-card-subtitle>
-                </ion-card-header>
-            </ion-card>
-        </ion-slide>
-    </ion-slides>
-
-    <!--app-mi-servicio  [titulo] = "titulo"
-                      [descripcion] = "descripcion"
-                      [imagen] = "imagen">
-    </app-mi-servicio-->
-    <app-mi-servicio  [id] = "id">
+        <ion-slides [options]= "slideOptsChico" *ngIf="valor == false">
+            <ion-slide *ngFor="let servicio of servicios | async">
+                <ion-card >
+                    <img [src]="servicio.imagen" (click)="cardClick(servicio)">
+                    <ion-card-header>
+                        <ion-card-title (click)="cardClick(servicio)">{{servicio.titulo}}</ion-card-title>
+                        <ion-card-subtitle>{{servicio.subtitulo}}</ion-card-subtitle>
+                    </ion-card-header>
+                </ion-card>
+            </ion-slide>
+        </ion-slides>
+    </div>
+    <app-mi-servicio *ngIf="mostrarServicio" 
+                    [srvClick] = "srvClick">
     </app-mi-servicio>
 
 

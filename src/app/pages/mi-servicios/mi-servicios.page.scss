@@ -1,0 +1,59 @@
+.slide-srv{
+    //position: fixed !important;
+    //z-index: 999;
+   
+}
+
+/*ion-slides ion-slide {
+    height: 200px !important;
+    @media (max-width: 800px) {
+        height: 150px !important;
+    }
+    @media (max-width: 560px) {
+        height: 100px !important;
+    }
+}*/
+
+ion-slides ion-slide {
+    height: 35vh !important;
+
+    @media (max-width: 800px) {
+        height: 43vh !important;
+        width: 20vh !important;
+        font-size: 20px !important;
+    }
+    @media (max-width: 560px) {
+        height: 40vh !important;
+        width: 22vh !important;
+        font-size: 12px !important;
+    }
+
+    ion-card-title { // título del card servicio
+        font-size: 20px !important;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        @media (max-width: 800px) {
+            font-size: 20px !important;
+        }
+        @media (max-width: 560px) {
+            font-size: 16px !important;
+        }
+    }
+}
+
+ion-card img {
+    height: 100px !important;
+    
+    object-fit: cover !important;
+    align-content: center !important;
+    
+    @media (max-width: 800px) {
+        object-fit: contain !important;
+        height: 100% !important;
+    }
+    @media (max-width: 560px) {
+        object-fit: contain !important;
+        height: 100% !important;
+    }
+}
+
