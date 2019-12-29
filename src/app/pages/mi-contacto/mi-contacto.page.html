@@ -2,5 +2,48 @@
 
 <ion-content>
 
+
+
+
+
+    <div ion-fixed>
+		<!--<ion-slides [options]="{'effect':'coverflow', 'centeredSlides': true,
+        'slidesPerView': 'auto', 'initialSlide': 1, 'coverflow': {'rotate': 50,'stretch': 0,'depth': 100, 'modifier': 1,'slideShadow':false
+        }}">-->
+		<!--<ion-slides effect = "coverflow" centeredSlides = "true"
+        slidesPerView = 'auto' initialSlide=1 rotate=50 stretch = "0" depth = "100" modifier = "1" slideShadow = "false"
+        >-->
+		<ion-slides #slide4 >
+			<ion-slide>
+				<div class="slide slide_1 "></div>
+			</ion-slide>
+			<ion-slide>
+				<div class="slide slide_2 "></div>
+			</ion-slide>
+			<ion-slide>
+				<div class="slide slide_3 "></div>
+			</ion-slide>
+			<ion-slide>
+				<div class="slide slide_4 "></div>
+			</ion-slide>
+		</ion-slides>
+
+		<h2>Live, travel, adventure, bless,<br>and don't be sorry.</h2>
+		<div class="footer-content btn-holder text-center">
+			<button ion-button block round color="dark" class="animated infinite pulse" (click)="goBack()">马上体验</button>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+
+
     <app-footer class="footer"></app-footer>
 </ion-content>

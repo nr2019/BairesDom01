@@ -1,19 +1,42 @@
-<div class="mi-servicio-comp">
+<div class="mi-servicio-comp" >
   <ion-grid >
     <ion-row>
-      <h1 class="ion-text-right">{{srvClick.titulo}}</h1>
+      <div class="mi-srv-titulo">
+        <h1>{{srvClick.titulo}}</h1>
+      </div>
     </ion-row>
-    <ion-row>
-        <ion-col size="6" size-lg="6" size-md="6" size-sm="12" size-xs="12">
-          <div>
-            <ion-img [src]="srvClick.imagen" class="mi-srv-img"></ion-img>
-          </div>  
+    <ion-row class="mi-medio-r">
+      <ion-col size="6" size-lg="4" size-md="4" size-sm="12" size-xs="12">
+        <div class="mi-srv-div-img">
+          <img [src]="srvClick.imagen" class="mi-srv-img">
+        </div>  
         </ion-col>
-        <ion-col size="6" size-lg="6" size-md="6" size-sm="12" size-xs="12">
-          
-              <h3 class="ion-text-right">{{srvClick.descripcion}}</h3>
-          
+        <ion-col size="6" size-lg="8" size-md="8" size-sm="12" size-xs="12">
+          <div class="mi-srv-desc" >
+            <h3>{{srvClick.descripcion}}</h3>
+          </div>
         </ion-col>
     </ion-row>
   </ion-grid>
+
+  <div class="mi-srv-galeria">
+    <ion-slides mode="ios" 
+                [options]="sliderOpts">
+        <ion-slide *ngFor="let l of srvClick.galeria" >
+          
+            <span>
+              <img class="mi-images" [src]="l.imagen" tappable (click)="openPreview(l.imagen)"><img>  
+            </span>
+            <span class="mi-srv-gal-desc">
+              <h2>
+                {{l.titulo}}
+              </h2>
+              <h3>
+                {{l.subtitulo}}
+              </h3>
+            </span>
+          
+        </ion-slide>
+    </ion-slides>
+  </div>
 </div>

@@ -2,12 +2,113 @@
     margin-top: 1vh !important;
     margin-bottom: 50px !important;
     margin-left: 3% !important;
+    margin-right: 3% !important;
     
 }
 .mi-srv-img{
-    height: 60vh !important;
+    height: 40vh !important;
+    border-radius: 8px !important;
 }
 
-.mi-srv-descr{
-        margin-left: 3% !important;
+.mi-srv-titulo {
+    width: 100% !important;
+    //align-content: center !important;
+    text-align: center !important;
+}
+
+.mi-srv-div-img{
+   margin-top: 5vh !important;
+   align-content: center !important;
+   justify-content: center !important;
+   display: flex !important;   
+}
+
+.mi-srv-desc{
+    margin-top: 5vh !important;
+    font-family: 'Montserrat', sans-serif;
+    // margin-right: 3% !important;
+}
+
+.mi-medio-r{
+ align-items: center !important;
+ 
+}
+
+// Galería
+.mi-srv-galeria{
+    margin-top: 3% !important;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 7% !important;
+}
+
+.mi-images{
+    height: 200px !important;
+    width: 400px  !important;
+    object-fit: cover !important;
+    align-content: center !important;
+    margin-left: 2px !important;
+    margin-right: 2px !important;
+    //content: '';
+    background-color: var(--ion-color-mi-contorno);
+    //border-radius: 60px 20px;
+    //border-radius: 8px;
+    border: 2px solid var(--ion-color-mi-contorno);
+}
+
+ion-slides {
+     
+
+    //margin-top: 2%;
+    background: #e6e6e6;
+
+    img {
+//        padding-top: 20px;
+  //      padding-bottom: 20px;
+        align-content: center !important;
+        justify-content: center !important;
+        display: flex !important;  
+    }
+
+    h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px !important;
+        @media (max-width: 800px) {
+            font-size: 22px !important;        
+         
+        }
+        @media (max-width: 560px) {
+            font-size: 20px !important;
+        }
+    }
+
+    h3{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px !important;
+        @media (max-width: 800px) {
+            font-size: 12px !important;        
+         
+        }
+        @media (max-width: 560px) {
+            font-size: 16px !important;
+        }
+    }
+}
+
+.mi-srv-gal-desc{
+    margin-left: 10%;
+}
+
+ion-grid h3{
+    font-size: 18px !important;
+    text-align: right !important;
+
+    @media (max-width: 800px) {
+        font-size: 16px !important;        
+        text-align: right !important;
+    }
+
+    @media (max-width: 560px) {
+        font-size: 14px !important;
+        text-align: center !important;
+    }
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IMiServicios } from '../../interfaces/imi-servicios';
 import { MiSrvService } from '../../services/mi-srv.service';
+import { ModalController } from '@ionic/angular';
+import { MiImagenPage } from '../../pages/mi-imagen/mi-imagen.page';
 
 @Component({
   selector: 'app-mi-servicio',
@@ -8,16 +10,28 @@ import { MiSrvService } from '../../services/mi-srv.service';
   styleUrls: ['./mi-servicio.component.scss'],
 })
 export class MiServicioComponent implements OnInit{
- 
-  //@Input() titulo: string = '';
-  //@Input() descripcion: string = '';
-  //@Input() imagen: string = '';
-  @Input() srvClick: IMiServicios; //any;
+  sliderOpts = {
+    zoom: false,
+    slideSPerView: 1.4,
+    centeredSlides: true,
+    spaceBetween: 20
+  };
 
-  constructor(private miService: MiSrvService) {}
+  @Input() srvClick: IMiServicios;
+
+  constructor(private miService: MiSrvService,
+              private modalCtrl: ModalController) {}
 
   ngOnInit() {
   }
 
+  openPreview(imagen) {
+    this.modalCtrl.create({
+      component: MiImagenPage,
+      componentProps:{
+         img: imagen
+      }
+    }).then(modal => modal.present());
+  }
 
 }
