@@ -19,20 +19,48 @@ export class MiServiciosPage implements OnInit {
   servicios: Observable<IMiServicios[]>;
   valor: boolean; // Identifica que slide mostrar dependiendo la resolución
   // Opciones para slide grande
-    slideOptsGrande = {
+  slideOptsGrande = {
     slidesPerView: 5.3,
     freeMode: false,
-
-    pagination: {
+    //centeredSlides: true,
+    pagination: { // muestra bullets
       el: '.swiper-pagination'
+    },
+    // breakpoint para manejar el responsive
+    breakpoints: {
+      // >= 320px
+      320: {
+        slidesPerView: 1.3,
+        //spaceBetween: 20
+      },
+      // >= 480px
+      480: {
+        slidesPerView: 2.3,
+        //spaceBetween: 30
+      },
+      // >= 640px
+      640: {
+        slidesPerView: 3.3,
+        //spaceBetween: 10
+      },
+      // >= 800px
+      800: {
+        slidesPerView: 4.3,
+        //spaceBetween: 40
+      },
+      // >= 1200px
+      1200: {
+        slidesPerView: 5.3,
+        //spaceBetween: 40
+      }
     },
   };
 
   // Opciones para slide chico
-  slideOptsChico = {
+  /*slideOptsChico = {
     slidesPerView: 1.3,
     freeMode: true,
-  };
+  };*/
 
   constructor(private navService: NavService,
               private miService: MiSrvService,

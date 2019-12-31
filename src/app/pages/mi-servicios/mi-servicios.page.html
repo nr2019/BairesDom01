@@ -2,7 +2,33 @@
 
 <ion-content>
     <div class="slide-srv">
-        <ion-slides #slides [options]= "slideOptsGrande" *ngIf="valor == true" (ionSlideTap)="slideClick($event)" pager="true">
+
+
+        <ion-slides #slides [options]= "slideOptsGrande"  pager="true">
+            <ion-slide *ngFor="let servicio of servicios | async"  color="dark">
+                <ion-card > 
+                    <ion-card-header>
+                        <ion-card-title (click)="cardClick(servicio)">{{servicio.titulo}}</ion-card-title>
+                        <ion-card-subtitle>{{servicio.subtitulo}}</ion-card-subtitle>
+                    </ion-card-header>
+                    
+                        <img [src]="servicio.imagen" (click)="cardClick(servicio)">
+                    
+                </ion-card>
+            </ion-slide>
+        </ion-slides>
+
+
+
+
+
+
+
+
+
+
+        <!--*ngIf="valor == true"-->
+        <!--ion-slides #slides [options]= "slideOptsGrande"  (ionSlideTap)="slideClick($event)" pager="true">
             <ion-slide *ngFor="let servicio of servicios | async"  color="dark">
                 <ion-card > 
                     <div class="mi-imagen">
@@ -15,9 +41,9 @@
                     <ion-card-subtitle>{{servicio.subtitulo}}</ion-card-subtitle>
                 </ion-card>
             </ion-slide>
-        </ion-slides>
+        </!--ion-slides-->
 
-        <ion-slides [options]= "slideOptsChico" *ngIf="valor == false">
+        <!--ion-slides [options]= "slideOptsChico" *ngIf="valor == false">
             <ion-slide *ngFor="let servicio of servicios | async">
                 <ion-card >
                     <img [src]="servicio.imagen" (click)="cardClick(servicio)">
@@ -27,7 +53,7 @@
                     </ion-card-header>
                 </ion-card>
             </ion-slide>
-        </ion-slides>
+        </ion-slides-->
     </div>
     <app-mi-servicio *ngIf="mostrarServicio" 
                     [srvClick] = "srvClick">
