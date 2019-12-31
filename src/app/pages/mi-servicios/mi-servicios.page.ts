@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Observable } from 'rxjs';
 import { InavMi } from '../../interfaces/Inav-mi';
 import { NavService } from '../../services/nav.service';
@@ -12,17 +12,22 @@ import { MiSrvService } from '../../services/mi-srv.service';
   styleUrls: ['./mi-servicios.page.scss'],
 })
 export class MiServiciosPage implements OnInit {
+
   mostrarServicio: boolean = false; //Al hacer click en un servicio se activa para que sea mostrado el componente "servicio"
   srvClick: IMiServicios; //any; 
   nav: Observable<InavMi[]>;
   servicios: Observable<IMiServicios[]>;
   valor: boolean; // Identifica que slide mostrar dependiendo la resolución
   // Opciones para slide grande
-  //opcionesSlide: string;
-  slideOptsGrande = {
-    slidesPerView: 7.3,
-    freeMode: true,
+    slideOptsGrande = {
+    slidesPerView: 5.3,
+    freeMode: false,
+
+    pagination: {
+      el: '.swiper-pagination'
+    },
   };
+
   // Opciones para slide chico
   slideOptsChico = {
     slidesPerView: 1.3,
@@ -35,6 +40,7 @@ export class MiServiciosPage implements OnInit {
               ) { }
 
   ngOnInit() {
+
     this.nav = this.navService.getNavMi();
     //En caso de que sea menor a 560 px cambia el deader por un action-sheet
     if ( this.platform.width() < 560 ) {
@@ -54,5 +60,10 @@ export class MiServiciosPage implements OnInit {
   cardClick(servicio: IMiServicios) {
     this.mostrarServicio = true;
     this.srvClick = servicio;
+  }
+
+
+  slideClick(event){
+    //console.log(event);
   }
 }

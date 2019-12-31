@@ -1,18 +1,18 @@
 .slide-srv{
-    //position: fixed !important;
-    //z-index: 999;
-   
+    width: 100% !important;
+    //height: 550px !important;
+    margin-left: 3% !important;
+    margin-right: 3% !important;
 }
 
-/*ion-slides ion-slide {
-    height: 200px !important;
-    @media (max-width: 800px) {
-        height: 150px !important;
-    }
-    @media (max-width: 560px) {
-        height: 100px !important;
-    }
+/*ion-slides{
+
 }*/
+.mi-imagen{
+    height: 200px !important;
+    width: 200px !important;
+    margin: auto !important;
+}
 
 ion-slides ion-slide {
     height: 35vh !important;
@@ -27,10 +27,15 @@ ion-slides ion-slide {
         width: 22vh !important;
         font-size: 12px !important;
     }
+    ion-card{
+        height: 260px !important;
+        width: 300px !important;      
+    }
 
     ion-card-title { // título del card servicio
-        font-size: 20px !important;
+        font-size: 18px !important;
         font-weight: bold;
+        margin-top: 0px !important;
         font-family: 'Montserrat', sans-serif;
         @media (max-width: 800px) {
             font-size: 20px !important;
@@ -42,18 +47,30 @@ ion-slides ion-slide {
 }
 
 ion-card img {
-    height: 100px !important;
-    
-    object-fit: cover !important;
-    align-content: center !important;
-    
+    padding-top: 1vh !important;
     @media (max-width: 800px) {
-        object-fit: contain !important;
-        height: 100% !important;
     }
     @media (max-width: 560px) {
-        object-fit: contain !important;
-        height: 100% !important;
     }
 }
 
+
+// slider
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    //background: black;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
