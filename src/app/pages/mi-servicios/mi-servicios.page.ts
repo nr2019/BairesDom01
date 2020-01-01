@@ -24,8 +24,12 @@ export class MiServiciosPage implements OnInit {
     freeMode: false,
     //centeredSlides: true,
     pagination: { // muestra bullets
-      el: '.swiper-pagination'
+      //el: '.swiper-pagination'
+      el: '.swiper-pagination',
+      type: 'bullets',
+
     },
+
     // breakpoint para manejar el responsive
     breakpoints: {
       // >= 320px

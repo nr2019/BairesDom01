@@ -70,7 +70,12 @@ ion-card img {
     -webkit-align-items: center;
     align-items: center;
   }*/
+  .nueva{
 
+  }
+  swiper-pagination-bullet{
+    bottom: 0px !important;
+}
 ion-card{
     height: 350px !important;
 
@@ -99,19 +104,19 @@ ion-card{
         height: 250px !important;
 
         @media (max-width: 320px) {
-            height: 250px !important;
+            height: 200px !important;
         }
         @media (max-width: 480px) {
-            height: 275px !important;
+            height: 200px !important;
         }
         @media (max-width: 640px) {
-            height: 300px !important;
+            height: 200px !important;
         }
         @media (max-width: 800px) {
-            height: 350px !important;
+            height: 250px !important;
         }
         @media (max-width: 1200px) {
-            height: 350px !important;
+            height: 250px !important;
         }
     }
 }
