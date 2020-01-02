@@ -18,6 +18,7 @@
 
 
 .header-grid{
+    width: 100% !important;
     @media (max-width: 1200px) {
         
     }
@@ -29,4 +30,9 @@
     @media (max-width: 500px) {
         //visibility: hidden;
     }
+}
+
+ion-grid ion-row {
+    //justify-content: flex-end !important;
+    justify-content: center !important;
 }

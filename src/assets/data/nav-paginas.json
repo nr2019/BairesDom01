@@ -21,7 +21,7 @@
     },
     {
         "title" : "Contacto",
-        "url"   : "/contacts",
+        "url"   : "/mi-contacto",
         "icon"  : "contact"
     }
 

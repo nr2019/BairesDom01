@@ -4,7 +4,7 @@ import { InavMi } from '../../interfaces/Inav-mi';
 import { NavService } from '../../services/nav.service';
 import { Platform, ModalController } from '@ionic/angular';
 import { MiSrvService } from '../../services/mi-srv.service';
-import { IMiGaleria, IMiGaleriaFull } from '../../interfaces/imi-galeria';
+import { IMiGaleria } from '../../interfaces/imi-galeria';
 import { MiImagenPage } from '../mi-imagen/mi-imagen.page';
 
 @Component({

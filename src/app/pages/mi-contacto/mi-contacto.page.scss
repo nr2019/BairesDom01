@@ -1,27 +1,26 @@
-//.swiper-pagination {
-    //position: fixed;
-    //bottom: 0px;
-    //padding-bottom: 3px;
-//    margin-top: 60px !important;
+img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: opacity(.5);
+}
 
-//}
+.contactanos{
+  //margin-top: -40px;
+  margin-top: -5%;
+  margin-left: 3%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  
+}
 
+.mi-contacto-img{
+  width: 100% !important;
+  height: 30vh !important;
+}
 
- .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: black;
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
+.mi-contacto-grid{
+  margin-left: 3%;
+  margin-right: 3%;
+}

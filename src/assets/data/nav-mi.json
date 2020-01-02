@@ -10,11 +10,6 @@
         "icon"  : "hammer"
     },
     {
-        "title" : "Portfolio",
-        "url"   : "/mi-portfolio",
-        "icon"  : "brush"
-    },
-    {
         "title" : "Nosotros",
         "url"   : "/mi-nosotros",
         "icon"  : "person"

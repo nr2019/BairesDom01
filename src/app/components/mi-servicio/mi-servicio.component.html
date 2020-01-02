@@ -1,4 +1,4 @@
-<div class="mi-servicio-comp" >
+<div class="mi-servicio-comp animated fadeIn" >
   <ion-grid >
     <ion-row>
       <div class="mi-srv-titulo">
@@ -19,7 +19,15 @@
     </ion-row>
   </ion-grid>
 
+  <ion-item-divider class="divider-01">
+    <ion-label>
+      Portfolio
+    </ion-label>
+  </ion-item-divider>
+ 
+
   <div class="mi-srv-galeria">
+
     <ion-slides mode="ios" 
                 [options]="sliderOpts">
         <ion-slide *ngFor="let l of srvClick.galeria" >
@@ -28,12 +36,12 @@
               <img class="mi-images" [src]="l.imagen" tappable (click)="openPreview(l.imagen)"><img>  
             </span>
             <span class="mi-srv-gal-desc">
-              <h2>
-                {{l.titulo}}
-              </h2>
-              <h3>
-                {{l.subtitulo}}
-              </h3>
+                <h2>
+                  {{l.titulo}}
+                </h2>
+                <h3>
+                  {{l.subtitulo}}
+                </h3>
             </span>
           
         </ion-slide>

@@ -1,6 +1,12 @@
-.subraya {
-    text-decoration: underline black;
+h1{
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
 }
+h2{
+  font-family: 'Julius Sans One', sans-serif;
+  
+}
+
 
 .mi-nosotros-container{
     font-family: 'Montserrat', sans-serif;
@@ -54,6 +60,9 @@
     }
 }
 
+.il-bl{
+  display: inline-block !important;
+}
 
 ion-label{
     h2{
@@ -73,7 +82,7 @@ ion-label{
         }
     }
     p{
-        font-size: 18px;
+        font-size: 16px;
         margin-left: 3%;
         font-style: italic;
         
@@ -175,5 +184,6 @@ ion-label{
     height: 150px;
   }
 
-  ion-list-header{
-  margin-bottom: 30px;}
+ion-list-header{
+  margin-bottom: 30px;
+}

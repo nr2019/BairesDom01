@@ -3,9 +3,11 @@
         <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
+        
 
-        <ion-grid fixed class="header-grid" *ngIf="valor == true">
-            <ion-row>
+
+        <ion-grid class="header-grid" *ngIf="valor == true">
+            <ion-row class="header-row">
                 <ion-col *ngFor="let item of navitems | async" size="2" size-lg="2" size-md="4" size-sm="6" size-xs="6" >
                     <ion-button size="small" shape="round" color="dark" [routerLink]="item.url">
                         <ion-icon slot="start" [name]="item.icon"></ion-icon>
@@ -15,6 +17,9 @@
             </ion-row>
         </ion-grid>
 
+        <!--ion-avatar class="logo" slot="end">
+            <img src="../../../assets/img/logo.jpg">
+        </ion-avatar-->
         <ion-button *ngIf="valor == false" shape="round"  color="dark" expand="full" (click)="menu()">
             Menú
         </ion-button> 

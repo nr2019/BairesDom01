@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { InavMi } from '../../interfaces/Inav-mi';
 import { ActionSheetController } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,8 @@ export class HeaderComponent implements OnInit {
   @Input() navitems: InavMi;
   @Input() valor: boolean;
 
-  constructor(private actionSheetCtrl: ActionSheetController) { }
+  constructor(private actionSheetCtrl: ActionSheetController,
+              private router: Router) { }
 
   ngOnInit() {
     //console.log(this.valor);
@@ -34,28 +36,29 @@ export class HeaderComponent implements OnInit {
         icon: 'home',
         // Ataja el evento click
         handler: () => {
-          //console.log('Delete clicked');
+          this.router.navigate(['/mi-home']);
         }
       },
       {
         text: 'Servicios',
         icon: 'hammer',
         handler: () => {
-          //console.log('Share clicked');
+          this.router.navigate(['/mi-servicios']);
         }
       },
+      /*
       {
         text: 'Portfolio',
         icon: 'brush',
         handler: () => {
           //console.log('Play clicked');
         }
-      },
+      },*/
       {
         text: 'Nosotros',
         icon: 'person',
         handler: () => {
-          //console.log('Favorite clicked');
+          this.router.navigate(['/mi-nosotros']);
         }
       },
       {
@@ -63,7 +66,7 @@ export class HeaderComponent implements OnInit {
         icon: 'contact',
         //role: 'cancel',
         handler: () => {
-          //console.log('Cancel clicked');
+          this.router.navigate(['/mi-contacto']);
         }
       }]
     });
