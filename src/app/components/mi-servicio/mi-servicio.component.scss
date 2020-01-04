@@ -13,7 +13,8 @@
 .mi-srv-titulo {
     width: 100% !important;
     text-align: center !important;
-    font-family: 'Julius Sans One', sans-serif;
+    //font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
@@ -26,7 +27,7 @@
 
 .mi-srv-desc{
     margin-top: 5vh !important;
-    font-family: 'Montserrat', sans-serif;
+    //font-family: 'Montserrat', sans-serif;
 }
 
 .mi-medio-r{
@@ -103,14 +104,25 @@ ion-slides {
     margin-left: 2%;
   }
 }
+ion-grid h1{
+  font-size: 40px !important;
 
+  @media (max-width: 800px) {
+    font-size: 30px !important;
+  }
+  @media (max-width: 560px) {
+    font-size: 30px !important;
+  }
+}
 ion-grid h3{
     font-size: 18px !important;
-    text-align: Left !important;
+    //text-align: Left !important;
+    font-family: 'Roboto', sans-serif;
+    text-align: justify !important;
 
     @media (max-width: 560px) {
         font-size: 16px !important;
-        text-align: center !important;
+        text-align: justify !important;
     }
 }
 

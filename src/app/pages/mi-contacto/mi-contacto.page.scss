@@ -5,14 +5,32 @@ img{
   filter: opacity(.5);
 }
 
-.contactanos{
+.label{
+  display: inline-block;
+}
+//.contactanos{
+  p{
   //margin-top: -40px;
-  margin-top: -5%;
+  margin-top: -12vh !important;
   margin-left: 3%;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 60px;
-  
+  @media (max-width: 250px) {
+    font-size: 16px;
+  }
+  @media (max-width: 320px) {
+    font-size: 20px;
+  }
+  @media (max-width: 480px) {
+      font-size: 30px;  }
+  @media (max-width: 640px) {
+    margin-top: -70px !important;
+  }
+  @media (max-width: 800px) {
+    margin-top: -70px !important;
+  }
+ 
 }
 
 .mi-contacto-img{
@@ -21,6 +39,14 @@ img{
 }
 
 .mi-contacto-grid{
+  margin-top: 70px !important;
+  //margin-left: 3%;
+  //margin-right: 3%;
+  width: 70%;
+  margin: auto;
+  //background-color: red !important;
+}
+
+.mi-contacto-titulo{
   margin-left: 3%;
-  margin-right: 3%;
 }
