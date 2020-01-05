@@ -10,7 +10,6 @@ img{
 }
 //.contactanos{
   p{
-  //margin-top: -40px;
   margin-top: -12vh !important;
   margin-left: 3%;
   font-family: 'Montserrat', sans-serif;
@@ -40,13 +39,15 @@ img{
 
 .mi-contacto-grid{
   margin-top: 70px !important;
-  //margin-left: 3%;
-  //margin-right: 3%;
   width: 70%;
   margin: auto;
-  //background-color: red !important;
 }
 
 .mi-contacto-titulo{
   margin-left: 3%;
+}
+
+.map{
+  width: 100% !important;
+  height: 200px !important;
 }

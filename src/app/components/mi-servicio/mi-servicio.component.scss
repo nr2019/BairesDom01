@@ -62,7 +62,8 @@
 }
 
 ion-slides {
-    background: #e6e6e6;
+    //background: #e6e6e6;
+    background: var(--ion-color-mi-primario);
 
     img {
         align-content: center !important;

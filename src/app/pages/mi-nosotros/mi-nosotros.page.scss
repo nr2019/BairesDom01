@@ -6,7 +6,9 @@ h2{
   font-family: 'Julius Sans One', sans-serif;
   
 }
-
+.margen-h2{
+  margin-left: 1% !important;
+}
 
 .mi-nosotros-container{
     font-family: 'Montserrat', sans-serif;
@@ -68,6 +70,7 @@ ion-label{
     h2{
         font-size: 20px;
         margin-left: 3%;
+        color: black;
         @media (max-width: 1200px) {
             font-size: 20px;
         }
@@ -85,7 +88,7 @@ ion-label{
         font-size: 16px;
         margin-left: 3%;
         font-style: italic;
-        
+        color: black;
         @media (max-width: 1200px) {
             font-size: 18px;
         }
@@ -187,3 +190,17 @@ ion-label{
 ion-list-header{
   margin-bottom: 30px;
 }
+
+.label{
+  display: inline-block;
+}
+
+.tamano-icono{
+  height: 35px !important;
+  width: 35px !important;
+}
+
+.mi-empresa{
+  padding-top: 5% !important;
+}
+

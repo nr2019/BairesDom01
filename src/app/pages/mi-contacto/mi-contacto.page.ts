@@ -1,8 +1,12 @@
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, AfterContentInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { InavMi } from '../../interfaces/Inav-mi';
 import { NavService } from '../../services/nav.service';
 import { Platform } from '@ionic/angular';
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { R3TargetBinder } from '@angular/compiler';
+
+declare var google;
 
 @Component({
   selector: 'app-mi-contacto',
@@ -10,23 +14,15 @@ import { Platform } from '@ionic/angular';
   styleUrls: ['./mi-contacto.page.scss'],
 })
 export class MiContactoPage implements OnInit {
+
+  map: any;
+  @ViewChild('mapElement', { read: ElementRef,  static: false })mapElement: ElementRef;
   nav: Observable<InavMi[]>;
   valor: boolean;
 
-  slideOpts = {
-    initialSlide: 0,
-    slidesPerView: 1,
-    //autoplay: true,
-    pagination: {
-      el: '.swiper-pagination'
-    },
-  };
-
-
-
-
   constructor(private navService: NavService,
-              private platform: Platform) { }
+              private platform: Platform,
+              private geolocation: Geolocation) { }
 
   ngOnInit() {
     this.nav = this.navService.getNavMi();
@@ -38,7 +34,18 @@ export class MiContactoPage implements OnInit {
     } else{
       this.valor = true;
     }
+
+    this.map = this.loadMap();
   }
 
+
+  async loadMap() {
+    const rta = await this.geolocation.getCurrentPosition();
+    const latlon = {
+      lat: rta.coords.latitude,
+      lng: rta.coords.longitude
+    }
+    console.log(latlon);
+  }
 
 }

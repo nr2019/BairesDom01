@@ -18,11 +18,5 @@
         "title" : "Hogar",
         "url"   : "/contacts",
         "icon"  : "home"
-    },
-    {
-        "title" : "Contacto",
-        "url"   : "/mi-contacto",
-        "icon"  : "contact"
     }
-
   ]

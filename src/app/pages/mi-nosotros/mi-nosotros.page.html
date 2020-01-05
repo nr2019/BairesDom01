@@ -19,16 +19,19 @@
 
             <ion-row>
                 <ion-col size="12">
-                        <h2 >Una empresa construída con sueños</h2>
+                    <h2 text-center>Una empresa construída con sueños</h2>
                 </ion-col>
             </ion-row>
             <ion-row>
                 <ion-col size="12"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aperiam minus explicabo qui nobis ab voluptatem omnis quo, error dolorum sunt. Alias itaque aliquam earum ab eaque laborum mollitia corporis.</p></ion-col>
             </ion-row>
-            <ion-row>
+
+            <ion-row class="mi-empresa">
                 <ion-col size="12">
                     <div class="mi-nosotros-vision-container">
-                      <h2><ion-icon name="eye"></ion-icon>  Nuestra Visión</h2>
+                      <ion-icon name="eye" class="label tamano-icono" color="mi-secundario"></ion-icon>
+                      <h2 class="label margen-h2">Nuestra Visión</h2>
+
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa quaerat sint corporis, doloribus reprehenderit ducimus dicta doloremque aut sed explicabo eum fuga porro ipsum molestias, accusantium necessitatibus alias laudantium!</p>
                     </div>
                 </ion-col>
@@ -36,7 +39,8 @@
             <ion-row>
                 <ion-col size="12">
                     <div class="mi-nosotros-mision-container">
-                      <h2><ion-icon name="compass"></ion-icon>  Nuestra Misión</h2>
+                      <ion-icon name="compass" class="label tamano-icono" color="mi-secundario"></ion-icon>
+                      <h2 class="label margen-h2">Nuestra Misión</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa quaerat sint corporis, doloribus reprehenderit ducimus dicta doloremque aut sed explicabo eum fuga porro ipsum molestias, accusantium necessitatibus alias laudantium!</p>
                     </div>
                 </ion-col>
@@ -44,13 +48,14 @@
             <ion-row>
                 <ion-col size="12">
                     <div class="mi-nosotros-objetivos-container">
-                      <h2><ion-icon name="locate"></ion-icon>  Nuestros Objetivos</h2>
+                      <ion-icon name="locate" class="label tamano-icono" color="mi-secundario"></ion-icon>
+                      <h2 class="label margen-h2">Nuestros Objetivos</h2>
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa quaerat sint corporis, doloribus reprehenderit ducimus dicta doloremque aut sed explicabo eum fuga porro ipsum molestias, accusantium necessitatibus alias laudantium!</p>
                     </div>
                 </ion-col>
             </ion-row>
         </ion-grid>
-        <div>
+        <div class="mi-empresa">
             <ion-list #lista>
             <ion-list-header>
                 <h2>Recorremos nuestro camnio junto a</h2>
@@ -64,8 +69,8 @@
                         <h2>{{amigo.empresa}}</h2>
                         <p>{{amigo.descripcion}}</p>
                         <a [href]="amigo.url" target="_blank">{{amigo.url}}</a>
-                    
                     </ion-label>
+                    <ion-icon slot="end" name="swap" color="mi-secundario"></ion-icon>
                 </ion-item>
                 <ion-item-options side="end">
     
@@ -77,6 +82,8 @@
             </ion-item-sliding>
             </ion-list>
         </div>
+        
     </div>
+
     <app-footer class="footer"></app-footer>
 </ion-content>

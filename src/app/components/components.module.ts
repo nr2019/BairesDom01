@@ -6,8 +6,6 @@ import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { MiServicioComponent } from './mi-servicio/mi-servicio.component';
 
-
-
 @NgModule({
   declarations: [
     FooterComponent,

@@ -1,6 +1,6 @@
 .btn{
-    border: 1px solid black;
-    //background-color: lightgray;
+    /*border: 1px solid black;
+    
     border-radius: 2em;
     @media (max-width: 1200px) {
         
@@ -12,12 +12,15 @@
 
     @media (max-width: 560px) {
         visibility: hidden;
-    }
-
+    }*/
+    color: blanchedalmond !important;
+    
 }
-
-
+.header-bg{
+    background-color: var(--ion-color-mi-primario) !important;
+}
 .header-grid{
+
     width: 100% !important;
     @media (max-width: 1200px) {
         

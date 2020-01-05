@@ -85,7 +85,32 @@
   --ion-color-mi-contorno-shade: #1e2023;
   --ion-color-mi-contorno-tint: #383a3e;
 
+  // MI - Primario
+  --ion-color-mi-primario: #EEEEEE;
+  --ion-color-mi-primario-rgb: 238,238,238;
+  --ion-color-mi-primario-contrast: #000000;
+  --ion-color-mi-primario-contrast-rgb: 0,0,0;
+  --ion-color-mi-primario-shade: #d1d1d1;
+  --ion-color-mi-primario-tint: #f0f0f0;
+
+  // MI - Secundario
+  --ion-color-mi-secundario: #FFA500;
+  --ion-color-mi-secundario-rgb: 255,165,0;
+  --ion-color-mi-secundario-contrast: #000000;
+  --ion-color-mi-secundario-contrast-rgb: 0,0,0;
+  --ion-color-mi-secundario-shade: #e09100;
+  --ion-color-mi-secundario-tint: #ffae1a;
+
+  --ion-color-mi-terciario: #AAAAAA;
+  --ion-color-mi-terciario-rgb: 170,170,170;
+  --ion-color-mi-terciario-contrast: #000000;
+  --ion-color-mi-terciario-contrast-rgb: 0,0,0;
+  --ion-color-mi-terciario-shade: #969696;
+  --ion-color-mi-terciario-tint: #b3b3b3;
+
 }
+
+// %%%%%%%%%%%%% Fin Root %%%%%%%%%%%%%
 
  // MI - Contorno imágenes
 .ion-color-mi-contorno {
@@ -95,4 +120,34 @@
   --ion-color-contrast-rgb: var(--ion-color-mi-contorno-contrast-rgb);
   --ion-color-shade: var(--ion-color-mi-contorno-shade);
   --ion-color-tint: var(--ion-color-mi-contorno-tint);
+}
+
+ // MI - Primario
+ .ion-color-mi-primario {
+  --ion-color-base: var(--ion-color-mi-primario);
+  --ion-color-base-rgb: var(--ion-color-mi-primario-rgb);
+  --ion-color-contrast: var(--ion-color-mi-primario-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-mi-primario-contrast-rgb);
+  --ion-color-shade: var(--ion-color-mi-primario-shade);
+  --ion-color-tint: var(--ion-color-mi-primario-tint);
+}
+
+ // MI - Secundario
+ .ion-color-mi-secundario {
+  --ion-color-base: var(--ion-color-mi-secundario);
+  --ion-color-base-rgb: var(--ion-color-mi-secundario-rgb);
+  --ion-color-contrast: var(--ion-color-mi-secundario-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-mi-secundario-contrast-rgb);
+  --ion-color-shade: var(--ion-color-mi-secundario-shade);
+  --ion-color-tint: var(--ion-color-mi-secundario-tint);
+}
+
+ // MI - Terciario
+ .ion-color-mi-terciario {
+  --ion-color-base: var(--ion-color-mi-terciario);
+  --ion-color-base-rgb: var(--ion-color-mi-terciario-rgb);
+  --ion-color-contrast: var(--ion-color-mi-terciario-contrast);
+  --ion-color-contrast-rgb: var(--ion-color-mi-terciario-contrast-rgb);
+  --ion-color-shade: var(--ion-color-mi-terciario-shade);
+  --ion-color-tint: var(--ion-color-mi-terciario-tint);
 }
