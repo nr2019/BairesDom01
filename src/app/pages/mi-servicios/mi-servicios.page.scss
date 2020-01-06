@@ -119,6 +119,22 @@ ion-card{
       font-weight: bold;
     }
 }
+
+
+.srv-vacio{
+  margin-top: 15vh !important;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  //
+  text-align: center !important;
+  margin-bottom: 15vh !important;
+}
+p{
+  font-size: 40px !important;
+  color: var(--ion-color-mi-terciario) !important;
+}
+
 // Animated
 @-webkit-keyframes fadeIn {
     from {

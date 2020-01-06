@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import { InavMi } from '../../interfaces/Inav-mi';
 import { NavService } from '../../services/nav.service';
 import { Platform } from '@ionic/angular';
-import { Geolocation } from '@ionic-native/geolocation/ngx';
+//import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { R3TargetBinder } from '@angular/compiler';
 
 declare var google;
@@ -15,14 +15,15 @@ declare var google;
 })
 export class MiContactoPage implements OnInit {
 
-  map: any;
-  @ViewChild('mapElement', { read: ElementRef,  static: false })mapElement: ElementRef;
+ /* map: any;
+  @ViewChild('map', { read: ElementRef,  static: false }) mapElement: ElementRef;*/
   nav: Observable<InavMi[]>;
   valor: boolean;
 
   constructor(private navService: NavService,
               private platform: Platform,
-              private geolocation: Geolocation) { }
+              //private geolocation: Geolocation
+              ) { }
 
   ngOnInit() {
     this.nav = this.navService.getNavMi();
@@ -35,17 +36,24 @@ export class MiContactoPage implements OnInit {
       this.valor = true;
     }
 
-    this.map = this.loadMap();
+//    this.map = this.loadMap();
   }
 
 
-  async loadMap() {
+  /*async loadMap() {
     const rta = await this.geolocation.getCurrentPosition();
     const latlon = {
       lat: rta.coords.latitude,
       lng: rta.coords.longitude
     }
+
+    var map = new google.maps.Map(this.mapElement.nativeElement,{
+      zoom: 14,
+      center: {lat: latlon.lat, lng: latlon.lng },
+    });
+
     console.log(latlon);
-  }
+    return map;
+  }*/
 
 }

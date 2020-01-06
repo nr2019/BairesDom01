@@ -14,6 +14,10 @@
             </ion-slide>
         </ion-slides>
     </div>
+    <div class="srv-vacio animated fadeIn slow"  *ngIf="mostrarServicio == false">
+        <p>Seleccione un servicio</p>
+    </div>
+    
     <app-mi-servicio *ngIf="mostrarServicio" 
                     [srvClick] = "srvClick">
     </app-mi-servicio>
