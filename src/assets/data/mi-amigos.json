@@ -13,7 +13,8 @@
         "descripcion"  : "Soldadura acero  1Soldadura acero 1Soldadura acero 1Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido",
         "imagen" : "./assets/img/mi-amigos-02.jpg",
         "url" : "www.infobae.com",
-        "telefono" : "4444-4444"
+        "telefono" : " "
+     
     },
     {
         "id" : "3",

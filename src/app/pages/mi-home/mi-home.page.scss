@@ -68,25 +68,43 @@ main{
   width: 100%;
   //max-width: 1200px;
   //height: 500px;
-  height: 100vh !important;
+  
   text-align: center;
   margin: 0 auto;
   background: #392f28;
   position: relative; 
-  color: #392f28;
+  //color: #392f28;
+  color:  white;
+
+
+  height: 50vh !important;
+  align-content: center !important;
+  justify-content: center !important;
+  display: flex !important;  
 }
 
 .hero h1{
   font-size: 4.1em;
+  font-family: 'Montserrat', sans-serif;
   margin: auto;
   position: absolute; 
-  top: 120px;
+  //top: 120px;
+  top: 15vh;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 1;
+  
+  @media (max-width: 800px) {
+    font-size: 3.1em;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 3.1em;
+  }
 }
 .hero p{
+  font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
   margin: auto;
   position: absolute; 
@@ -94,20 +112,35 @@ main{
   left: 0;
   right: 0;
   bottom: 0;
-   z-index: 1;
+  z-index: 1;
+  @media (max-width: 800px) {
+    font-size: 1.4em;
+  }
+
+  @media (max-width: 560px) {
+    font-size: 1.3em;
+  }
 }
 .hero img{
   width: 100% !important;
   object-fit: cover !important;
+  filter: opacity(.5);
 }
 
 .bar{
   width: 100%;
   height: 200px;
+  /*
   background: -moz-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
   background: -webkit-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
   background: -ms-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
   background: linear-gradient(161deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
+*/
+  //background: rgb(238,238,238);
+  //background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(255,165,0,1) 35%, rgba(170,170,170,1) 100%);
+  background: var(--ion-color-mi-primario);
+  background: linear-gradient(90deg, var(--ion-color-mi-primario) 0%, var(--ion-color-mi-secundario) 35%, var(--ion-color-mi-terciario) 100%);
+
   opacity: 0.3;
   position: absolute; 
   z-index: 0;
@@ -124,6 +157,26 @@ main{
   -webkit-animation: scale-in 1.3s ease-out;
   -moz-animation: scale-in 1.3s  ease-out;
     animation: scale-in 1.3s ease-out; 
+}
+
+.mi-home-context{
+  margin-top: 5%;
+  margin-left: 3%;
+  margin-right: 3%;
+  p{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+
+    @media (max-width: 800px) {
+      font-size: 20px;
+    }
+
+    @media (max-width: 560px) {
+      font-size: 18px;
+    }
+
+    }
 }
 
 /*

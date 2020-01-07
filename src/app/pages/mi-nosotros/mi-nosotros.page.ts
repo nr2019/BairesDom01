@@ -2,10 +2,10 @@ import { Component, OnInit, ViewChild, AfterContentInit} from '@angular/core';
 import { Observable } from 'rxjs';
 import { InavMi } from '../../interfaces/Inav-mi';
 import { NavService } from '../../services/nav.service';
-import { Platform, IonList } from '@ionic/angular';
+import { Platform, IonList, ToastController } from '@ionic/angular';
 import { IMiAmigos } from '../../interfaces/imi-amigos';
 import { MiSrvService } from '../../services/mi-srv.service';
-
+import { CallNumber } from '@ionic-native/call-number/ngx';
 
 
 @Component({
@@ -21,7 +21,9 @@ export class MiNosotrosPage implements OnInit {
   valor: boolean;
   constructor(private navService: NavService,
               private platform: Platform,
-              private miService: MiSrvService) { }
+              private miService: MiSrvService,
+              private toastCtrl: ToastController,
+              private callNumber: CallNumber) { }
 
  
   ngOnInit() {
@@ -36,8 +38,32 @@ export class MiNosotrosPage implements OnInit {
     }
 
     this.amigos = this.miService.getAmigos();
-
+    
    }
 
+   llamar(nro: any) {
+     console.log (nro);
+     if (nro === " ") {
+      this.mostrarError('La empresa seleccionada no posee número telefónico.');
+     } else{
+      this.callNumber.callNumber(nro, true)
+      .then(res => console.log('Launched dialer!', res))
+      .catch(err => console.log('Error launching dialer', err));
+     }
+
+
+   }
   //click to call?
+
+  //
+
+
+  async mostrarError( message: string) {
+    const toast = await this.toastCtrl.create({
+      message,
+      duration: 2000,
+      color: 'danger'
+    });
+    toast.present();
+  }
 }
