@@ -3,7 +3,7 @@ export interface IMiContacto {
     numero: number;
     partido: string;
     cp: string;
-    telefono: IMiTelefono[];
+    telefono: string;
     provincia: string;
     pais: string;
     mail?: string;
@@ -11,11 +11,4 @@ export interface IMiContacto {
     twitter?: string;
     instagram?: string;
     linkedin?: string;
-
-}
-
-export interface IMiTelefono {
-    id: number;
-    tipo: string;
-    numero: string;
 }

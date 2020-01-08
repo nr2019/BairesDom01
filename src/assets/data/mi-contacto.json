@@ -1,0 +1,16 @@
+[
+    {
+        "calle" : "Av. Siempre Viva",
+        "numero"   : "742",
+        "partido"   : "3 de febrero",
+        "cp"  : "1654",
+        "telefono": "3212-9807",
+        "provincia" : "Buenos Aires",
+        "pais" : "Argentina",
+        "mail" : "contacto@bairesdom.com",
+        "facebook" : "http://www.facebook.com/bairesdom",
+        "twitter" : "http://www.twitter.com/bairesdom",
+        "instagram" : "http://www.instagram.com/bairesdom",
+        "linkedin" : "http://www.linkedin.com/bairesdom"
+    }
+]

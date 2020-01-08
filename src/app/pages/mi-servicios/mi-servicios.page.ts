@@ -24,7 +24,6 @@ export class MiServiciosPage implements OnInit {
     freeMode: false,
     //centeredSlides: true,
     pagination: { // muestra bullets
-      //el: '.swiper-pagination'
       el: '.swiper-pagination',
       type: 'bullets',
 
@@ -59,12 +58,6 @@ export class MiServiciosPage implements OnInit {
       }
     },
   };
-
-  // Opciones para slide chico
-  /*slideOptsChico = {
-    slidesPerView: 1.3,
-    freeMode: true,
-  };*/
 
   constructor(private navService: NavService,
               private miService: MiSrvService,

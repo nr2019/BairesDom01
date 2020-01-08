@@ -1,12 +1,10 @@
-import { Component, OnInit, ElementRef, ViewChild, AfterContentInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { InavMi } from '../../interfaces/Inav-mi';
 import { NavService } from '../../services/nav.service';
 import { Platform } from '@ionic/angular';
-//import { Geolocation } from '@ionic-native/geolocation/ngx';
-import { R3TargetBinder } from '@angular/compiler';
-
-declare var google;
+import { MiSrvService } from '../../services/mi-srv.service';
+import { IMiContacto } from '../../interfaces/imi-contacto';
 
 @Component({
   selector: 'app-mi-contacto',
@@ -15,45 +13,34 @@ declare var google;
 })
 export class MiContactoPage implements OnInit {
 
- /* map: any;
-  @ViewChild('map', { read: ElementRef,  static: false }) mapElement: ElementRef;*/
   nav: Observable<InavMi[]>;
   valor: boolean;
-
+  arreglo: Observable<IMiContacto[]>;
+  contacto: IMiContacto;
   constructor(private navService: NavService,
               private platform: Platform,
-              //private geolocation: Geolocation
+              private miService: MiSrvService
               ) { }
 
   ngOnInit() {
     this.nav = this.navService.getNavMi();
-    //En caso de que sea menor a 560 px cambia el deader por un action-sheet
+    // En caso de que sea menor a 560 px cambia el deader por un action-sheet
     if ( this.platform.width() < 560 ) {
-      //this.valor = 'condense';
       this.valor = false;
       console.log(this.valor);
     } else{
       this.valor = true;
     }
 
-//    this.map = this.loadMap();
+    this.contacto = this.miService.getContacto();
+    //this.arreglo = this.miService.getContacto();
+    //this.contacto = this.arreglo[0];
+   // this.miService.getContacto()
+     /*     .subscribe((data) => {  this.contacto = data[0];
+                                 // this.contacto = data()[0]
+                                  console.log( data [0] );
+                                  //console.log( this.contacto );
+                                });*/
+
   }
-
-
-  /*async loadMap() {
-    const rta = await this.geolocation.getCurrentPosition();
-    const latlon = {
-      lat: rta.coords.latitude,
-      lng: rta.coords.longitude
-    }
-
-    var map = new google.maps.Map(this.mapElement.nativeElement,{
-      zoom: 14,
-      center: {lat: latlon.lat, lng: latlon.lng },
-    });
-
-    console.log(latlon);
-    return map;
-  }*/
-
 }

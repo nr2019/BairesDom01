@@ -3,13 +3,16 @@ import { HttpClient } from '@angular/common/http';
 import { IMiServicios } from '../interfaces/imi-servicios';
 import { IMiGaleriaFull } from '../interfaces/imi-galeria';
 import { IMiAmigos } from '../interfaces/imi-amigos';
+import { IMiContacto } from '../interfaces/imi-contacto';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MiSrvService {
   servicios: any;
-
+  
+  valores: any = [];
+  
   constructor(private http: HttpClient) { }
 
   getServicios(){
@@ -36,6 +39,18 @@ export class MiSrvService {
 
   getAmigos() {
     return this.http.get<IMiAmigos[]>('./assets/data/mi-amigos.json');
+  }
+
+  getContacto() {
+    this.http.get<IMiContacto[]>('./assets/data/mi-contacto.json')
+                                .subscribe ((data) => { this.valores = data });
+                                    //estructura = data;
+                                                         //console.log( "este" );
+                                                         //console.log( estructura[0]);
+                                                         
+
+
+    return estructura;
   }
 
 }
