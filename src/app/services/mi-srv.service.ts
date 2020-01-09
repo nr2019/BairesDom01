@@ -5,6 +5,7 @@ import { IMiGaleriaFull } from '../interfaces/imi-galeria';
 import { IMiAmigos } from '../interfaces/imi-amigos';
 import { IMiContacto } from '../interfaces/imi-contacto';
 
+
 @Injectable({
   providedIn: 'root'
 })
@@ -42,15 +43,7 @@ export class MiSrvService {
   }
 
   getContacto() {
-    this.http.get<IMiContacto[]>('./assets/data/mi-contacto.json')
-                                .subscribe ((data) => { this.valores = data });
-                                    //estructura = data;
-                                                         //console.log( "este" );
-                                                         //console.log( estructura[0]);
-                                                         
-
-
-    return estructura;
+    return this.http.get<IMiContacto>('./assets/data/mi-contacto.json');
   }
 
 }

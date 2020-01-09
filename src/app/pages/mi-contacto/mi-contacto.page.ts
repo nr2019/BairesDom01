@@ -16,11 +16,23 @@ export class MiContactoPage implements OnInit {
   nav: Observable<InavMi[]>;
   valor: boolean;
   arreglo: Observable<IMiContacto[]>;
-  contacto: IMiContacto;
+  calle: string;
+  numero: number;
+  partido: string;
+  cp: string;
+  telefono: string;
+  provincia: string;
+  pais: string;
+  mail: string;
+  facebook: string;
+  twitter: string;
+  instagram: string;
+  linkedin: string;
+
   constructor(private navService: NavService,
               private platform: Platform,
               private miService: MiSrvService
-              ) { }
+              ) {}
 
   ngOnInit() {
     this.nav = this.navService.getNavMi();
@@ -28,19 +40,24 @@ export class MiContactoPage implements OnInit {
     if ( this.platform.width() < 560 ) {
       this.valor = false;
       console.log(this.valor);
-    } else{
+    } else {
       this.valor = true;
     }
 
-    this.contacto = this.miService.getContacto();
-    //this.arreglo = this.miService.getContacto();
-    //this.contacto = this.arreglo[0];
-   // this.miService.getContacto()
-     /*     .subscribe((data) => {  this.contacto = data[0];
-                                 // this.contacto = data()[0]
-                                  console.log( data [0] );
-                                  //console.log( this.contacto );
-                                });*/
-
+    this.miService.getContacto().subscribe ((data: IMiContacto) => {
+                                                        //console.log(data);
+                                                        this.calle = data['calle'];
+                                                        this.numero = data['numero'];
+                                                        this.partido = data['partido'];
+                                                        this.cp = data['cp'];
+                                                        this.telefono = data['telefono'];
+                                                        this.provincia = data['provincia'];
+                                                        this.pais = data['pais'];
+                                                        this.mail = data['mail'];
+                                                        this.facebook = data['facebook'];
+                                                        this.twitter = data['twitter'];
+                                                        this.instagram = data['instagram'];
+                                                        this.linkedin = data['linkedin'];
+                                                      });
   }
 }
