@@ -12,6 +12,10 @@ import { MiImagenPage } from '../../pages/mi-imagen/mi-imagen.page';
 export class MiServicioComponent implements OnInit{
   sliderOpts = {
     zoom: false,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: true,
+    },
     slideSPerView: 1.4,
     centeredSlides: true,
     spaceBetween: 20

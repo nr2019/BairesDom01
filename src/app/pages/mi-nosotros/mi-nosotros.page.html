@@ -1,22 +1,16 @@
 <app-header  [navitems]="nav" [valor]="valor" ></app-header>
 
 <ion-content>
+    <div class="mi-nosotros-container animated fadeIn">
+        <h1 class="animated fadeIn slow " text-center>BairesDom</h1>        
+    </div>
+    <div class="mi-nosotros-img-container">
+        <img class="mi-nosotros-img animated fadeIn slow" src="../../../assets/img/mi-nosotros.jpg" >
+    </div>
+
+
     <div class="mi-nosotros-container animated fadeIn ">
         <ion-grid >
-            <ion-row>
-                <ion-col size="12">
-                    <h1 class="animated fadeIn slow " text-center>BairesDom</h1>
-                </ion-col>
-            </ion-row>
-            
-            <ion-row>
-                <ion-col size="12">
-                    <div class="mi-nosotros-img-container">
-                        <img class="mi-nosotros-img animated fadeIn slow" src="../../../assets/img/mi-nosotros.jpg" >
-                    </div>
-                </ion-col>
-            </ion-row>
-
             <ion-row>
                 <ion-col size="12">
                     <h2 text-center>Una empresa construída con sueños</h2>
@@ -68,6 +62,7 @@
                     <ion-label class="mi-nosotros-texto">
                         <h2>{{amigo.empresa}}</h2>
                         <p>{{amigo.descripcion}}</p>
+                        <p>{{amigo.telefono}}</p>
                         <a [href]="amigo.url" target="_blank">{{amigo.url}}</a>
                     </ion-label>
                     <ion-icon slot="end" name="swap" color="mi-secundario"></ion-icon>
