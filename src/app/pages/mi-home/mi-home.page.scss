@@ -64,7 +64,7 @@ main{
   overflow: hidden;
   font-family: 'Expletus Sans', cursive;
 }
-.hero{
+.home{
   width: 100%;
   //max-width: 1200px;
   //height: 500px;
@@ -83,7 +83,7 @@ main{
   display: flex !important;  
 }
 
-.hero h1{
+.home h1{
   font-size: 4.1em;
   font-family: 'Montserrat', sans-serif;
   margin: auto;
@@ -103,7 +103,7 @@ main{
     font-size: 3.1em;
   }
 }
-.hero p{
+.home p{
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
   margin: auto;
@@ -121,7 +121,7 @@ main{
     font-size: 1.3em;
   }
 }
-.hero img{
+.home img{
   width: 100% !important;
   object-fit: cover !important;
   filter: opacity(.5);
@@ -130,14 +130,6 @@ main{
 .bar{
   width: 100%;
   height: 200px;
-  /*
-  background: -moz-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
-  background: -webkit-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
-  background: -ms-linear-gradient(289deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
-  background: linear-gradient(161deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
-*/
-  //background: rgb(238,238,238);
-  //background: linear-gradient(90deg, rgba(238,238,238,1) 0%, rgba(255,165,0,1) 35%, rgba(170,170,170,1) 100%);
   background: var(--ion-color-mi-primario);
   background: linear-gradient(90deg, var(--ion-color-mi-primario) 0%, var(--ion-color-mi-secundario) 35%, var(--ion-color-mi-terciario) 100%);
 
@@ -153,16 +145,12 @@ main{
   -moz-animation: roll-out 1.2s ease-out ;
     animation: roll-out 1.2s ease-out ; 
 }
-.hero h1, .hero p{
-  -webkit-animation: scale-in 1.3s ease-out;
-  -moz-animation: scale-in 1.3s  ease-out;
-    animation: scale-in 1.3s ease-out; 
-}
 
 .mi-home-context{
   margin-top: 5%;
   margin-left: 3%;
   margin-right: 3%;
+  margin-bottom: 10%;
   p{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -198,3 +186,89 @@ main{
   }
  
 }*/
+
+
+
+//Animated
+
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
+
+
+.animated.slow {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+}

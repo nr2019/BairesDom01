@@ -6,7 +6,7 @@
         
         <ion-grid class="header-grid header-bg" *ngIf="valor == true">
             <ion-row class="header-row">
-                <ion-col *ngFor="let item of navitems | async" size="2" size-lg="2" size-md="4" size-sm="6" size-xs="6" >
+                <ion-col *ngFor="let item of navitems | async" size="2" size-lg="2" size-md="3" size-sm="6" size-xs="6" >
                     <ion-button size="small" shape="round" color="mi-secundario" [routerLink]="item.url">
                         <ion-icon slot="start" [name]="item.icon" ></ion-icon>
                         <p class="btn">{{item.title}}</p>
@@ -16,7 +16,7 @@
         </ion-grid>
 
         <ion-button *ngIf="valor == false" shape="round"  color="mi-secundario" expand="full" (click)="menu()">
-            Menú
+            Navegar
         </ion-button> 
     </ion-toolbar>
 </ion-header>     

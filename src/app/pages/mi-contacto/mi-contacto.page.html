@@ -1,10 +1,10 @@
 <app-header  [navitems]="nav" [valor]="valor" ></app-header>
 
 <ion-content>
-    <div class="mi-contacto-img"> 
+    <!--div class="mi-contacto-img"> 
         <img src="../../../assets/img/mi-contacto.jpg" alt="contacto">
         <p class="contactanos">Contactános</p>
-    </div>
+    <div>
     <div class="mi-contacto-grid">
         <ion-grid>
             <ion-row>
@@ -119,9 +119,119 @@
                 </ion-col>
             </ion-row>
         </ion-grid>
-    </div>
-    <!--div #map class="map"></!div-->
+    </div-->
    
+
+
+
+
+
+    <div class="home">
+        <h1 class="animated fadeInUp slow">Contacto</h1>
+        <p class="animated fadeInLeft slow">Póngase en contracto con nosotros para una mejor atención</p>
+        <img src="../../../assets/img/mi-contacto.jpg" />
+        <div class="bar"></div>
+    </div>
+    <div class="mi-contacto-grid">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    <ion-item >
+                        <ion-icon name="pin" class="label mi-contacto-titulo" color="mi-secundario"></ion-icon>
+                        <ion-label class="label mi-contacto-titulo margen-label">Calle</ion-label>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    <ion-item >
+                        <ion-label class="label"> {{calle}} - {{numero}}  </ion-label>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    <ion-item >
+                        <ion-icon name="journal" class="label mi-contacto-titulo" color="mi-secundario"></ion-icon>  
+                        <ion-label class="label mi-contacto-titulo margen-label">Província</ion-label>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    <ion-item>
+                        <ion-label class="label">{{provincia}}</ion-label>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    <ion-item >
+                        <ion-icon name="map" class="label mi-contacto-titulo" color="mi-secundario"></ion-icon>  
+                        <ion-label class="label mi-contacto-titulo margen-label">Partido</ion-label>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    <ion-item >
+                        <ion-label class="label">{{partido}}</ion-label>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    <ion-item >
+                        <ion-icon name="planet" class="label mi-contacto-titulo" color="mi-secundario"></ion-icon>  
+                        <ion-label class="label mi-contacto-titulo margen-label">País</ion-label>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    <ion-item >
+                        <ion-label class="label">{{pais}}</ion-label>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    <ion-item >
+                        <ion-icon name="mail-open" class="label mi-contacto-titulo" color="mi-secundario"></ion-icon>  
+                        <ion-label class="label mi-contacto-titulo margen-label">C.P.</ion-label>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    <ion-item >
+                        <ion-label class="label">{{cp}}</ion-label>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    <ion-item >
+                        <ion-icon name="call" class="label mi-contacto-titulo" color="mi-secundario"></ion-icon>  
+                        <ion-label class="label mi-contacto-titulo margen-label">Teléfono</ion-label>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    <ion-item >
+                        <ion-label class="label">{{telefono}}</ion-label>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    <ion-item >
+                        <ion-icon name="mail" class="label mi-contacto-titulo" color="mi-secundario"></ion-icon>  
+                        <ion-label class="label mi-contacto-titulo margen-label">E-Mail</ion-label>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    <ion-item >
+                        <ion-label class="label">{{mail}}</ion-label>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+                    
+                </ion-col>
+                <ion-col size="3" size-lg="3" size-md="6" size-sm="12" size-xs="12">
+
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+    </div>
+
+
+
+
 
     <app-footer class="footer"></app-footer>
 </ion-content>
