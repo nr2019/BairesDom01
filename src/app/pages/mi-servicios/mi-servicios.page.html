@@ -4,7 +4,7 @@
     <div class="slide-srv animated fadeInRight slow">
         <ion-slides #slides [options]= "slideOptsGrande"  pager="true">
             <ion-slide *ngFor="let servicio of servicios | async"  color="dark">
-                <ion-card > 
+                <ion-card class="mi-srv-card"> 
                     <ion-card-header>
                         <ion-card-title (click)="cardClick(servicio)">{{servicio.titulo}}</ion-card-title>
                         <ion-card-subtitle>{{servicio.subtitulo}}</ion-card-subtitle>

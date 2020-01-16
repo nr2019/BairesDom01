@@ -48,7 +48,23 @@
                     </div>
                 </ion-col>
             </ion-row>
+            <ion-row>
+                <ion-col size="12">
+                    <div class="mi-nosotros-objetivos-container">
+                      <ion-icon name="ribbon" class="label tamano-icono" color="mi-secundario"></ion-icon>
+                      <h2 class="label margen-h2">Confían en nosotros</h2>
+                      <p>
+                      <ion-chip *ngFor="let cliente of clientes" color="mi-secundario">
+
+                        <ion-icon name="checkmark-circle" color="mi-terciario"></ion-icon>
+                        <ion-label color="mi-terciario">{{cliente}}</ion-label>
+                    </ion-chip>
+                    </p>
+                    </div>
+                </ion-col>
+            </ion-row>
         </ion-grid>
+
         <div class="mi-empresa">
             <ion-list #lista>
             <ion-list-header>

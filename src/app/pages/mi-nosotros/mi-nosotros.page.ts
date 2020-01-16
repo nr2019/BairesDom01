@@ -14,16 +14,15 @@ import { CallNumber } from '@ionic-native/call-number/ngx';
   styleUrls: ['./mi-nosotros.page.scss'],
 })
 export class MiNosotrosPage implements OnInit {
-  
-
   nav: Observable<InavMi[]>;
   amigos: Observable<IMiAmigos[]>;
   valor: boolean;
-  constructor(private navService: NavService,
-              private platform: Platform,
-              private miService: MiSrvService,
-              private toastCtrl: ToastController,
-              private callNumber: CallNumber) { }
+  clientes: any;
+  constructor( private navService: NavService,
+               private platform: Platform,
+               private miService: MiSrvService,
+               private toastCtrl: ToastController,
+               private callNumber: CallNumber ) { }
 
  
   ngOnInit() {
@@ -38,10 +37,10 @@ export class MiNosotrosPage implements OnInit {
     }
 
     this.amigos = this.miService.getAmigos();
-    
+    this.clientes = ['Peugeot01', 'Bonafide01', 'Toyota01', 'Peugeot02', 'Bonafide02', 'Toyota02', 'Peugeot03', 'Bonafide03', 'Toyota03', 'Peugeot04', 'Bonafide04', 'Toyota04', 'Peugeot05', 'Bonafide05', 'Toyota05',];
    }
 
-   llamar(nro: any) {
+   llamar( nro: any) {
      console.log (nro);
      if (nro === " ") {
       this.mostrarError('La empresa seleccionada no posee número telefónico.');
