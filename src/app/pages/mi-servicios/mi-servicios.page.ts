@@ -83,6 +83,7 @@ export class MiServiciosPage implements OnInit {
   }
 
   cardClick(servicio: IMiServicios) {
+    
     this.mostrarServicio = true;
     this.srvClick = servicio;
   }

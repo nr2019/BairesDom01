@@ -71,7 +71,8 @@ ion-card img {
     align-items: center;
   }*/
 
-.mi-srv-card{
+//.mi-srv-card{
+.sombra{  
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); // Sombra al card
 }
 
@@ -124,6 +125,15 @@ ion-card{
     }
 }
 
+
+ion-card:hover{
+  --background: var(--ion-color-mi-terciario);
+  box-shadow: inset 0px 0px 0px 3px var(--ion-color-mi-secundario);
+  ion-card-subtitle{
+    color: white;
+  }
+
+}    
 
 .srv-vacio{
   margin-top: 15vh !important;
