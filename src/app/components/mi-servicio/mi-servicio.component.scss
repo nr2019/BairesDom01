@@ -61,6 +61,10 @@
     //border: 2px solid var(--ion-color-mi-contorno);
 }
 
+.sombra{  
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); // Sombra al card
+}
+
 ion-slides {
     //background: #e6e6e6;
     background: var(--ion-color-mi-primario);
