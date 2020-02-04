@@ -36,3 +36,10 @@
     
 }
 
+.seccionActivaMi span {
+    color: var(--ion-color-mi-secundario) !important;
+}
+
+.seccionInactivaMi span {
+    color: var(--ion-color-mi-terciario) !important;
+}
