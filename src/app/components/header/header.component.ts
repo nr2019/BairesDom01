@@ -65,6 +65,7 @@ export class HeaderComponent implements OnInit {
       {
         text: 'Servicios',
         icon: 'hammer',
+        cssClass: this.cssSeccion[1],
         handler: () => {
           this.router.navigate(['/mi-servicios']);
         }
@@ -72,6 +73,7 @@ export class HeaderComponent implements OnInit {
       {
         text: 'Nosotros',
         icon: 'person',
+        cssClass: this.cssSeccion[2],
         handler: () => {
           this.router.navigate(['/mi-nosotros']);
         }
@@ -79,6 +81,7 @@ export class HeaderComponent implements OnInit {
       {
         text: 'Contacto',
         icon: 'contact',
+        cssClass: this.cssSeccion[3],
         handler: () => {
           this.router.navigate(['/mi-contacto']);
         }

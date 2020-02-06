@@ -36,8 +36,20 @@
     
 }
 
+.seccionActivaMi {
+    ion-icon{
+        color: var(--ion-color-mi-secundario) !important;
+    }
+}
+
 .seccionActivaMi span {
     color: var(--ion-color-mi-secundario) !important;
+}
+
+.seccionInactivaMi {
+    ion-icon{
+        color: var(--ion-color-mi-terciario);
+    }
 }
 
 .seccionInactivaMi span {
