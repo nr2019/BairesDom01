@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ɵConsole } from '@angular/core';
 import { InavMi } from '../../interfaces/Inav-mi';
 import { ActionSheetController } from '@ionic/angular';
 import { Router } from '@angular/router';
@@ -12,31 +12,68 @@ export class HeaderComponent implements OnInit {
   @Input() navitems: InavMi;
   @Input() valor: boolean;
   @Input() seccion: string;
+  @Input() rubro: string;
   cssSeccion = [];
+  colores: {
+    primario: string,
+    secundario: string,
+    terciario: string
+  };
   constructor(private actionSheetCtrl: ActionSheetController,
               private router: Router) { }
 
   ngOnInit() {
-    
+
+    if ( this.rubro === 'MI') {
+      this.colores = {
+        primario : 'MI-PRIMARIO',
+        secundario : 'MI-SECUNDARIO',
+        terciario : 'MI-TERCIARIO',
+      };
+    }
+
+    if ( this.rubro === 'MM') {
+        this.colores = {
+        primario : 'MM-PRIMARIO',
+        secundario : 'MM-SECUNDARIO',
+        terciario : 'MM-TERCIARIO',
+        };
+      }
+
+    if ( this.rubro === 'CT') {
+        this.colores = {
+          primario : 'CT-PRIMARIO',
+          secundario : 'CT-SECUNDARIO',
+          terciario : 'CT-TERCIARIO',
+        };
+      }
+    if ( this.rubro === 'HG') {
+        this.colores = {
+          primario : 'HG-PRIMARIO',
+          secundario : 'HG-SECUNDARIO',
+          terciario : 'HG-TERCIARIO',
+        };
+      }
   }
 
   async menu() {
-    if (this.seccion === 'HOME') {
+    
+    if (this.seccion === 'MI-HOME') {
       this.cssSeccion[0] = 'seccionActivaMi';
-    } else{
+    } else {
       this.cssSeccion[0] = 'seccionInactivaMi';
     }
-    if (this.seccion === 'SERVICIOS') {
+    if (this.seccion === 'MI-SERVICIOS') {
       this.cssSeccion[1] = 'seccionActivaMi';
-    } else{
+    } else {
       this.cssSeccion[1] = 'seccionInactivaMi';
     }
-    if (this.seccion === 'NOSOTROS') {
+    if (this.seccion === 'MI-NOSOTROS') {
       this.cssSeccion[2] = 'seccionActivaMi';
-    } else{
+    } else {
       this.cssSeccion[2] = 'seccionInactivaMi';
     }
-    if (this.seccion === 'CONTACTO') {
+    if (this.seccion === 'MI-CONTACTO') {
       this.cssSeccion[3] = 'seccionActivaMi';
     } else{
       this.cssSeccion[3] = 'seccionInactivaMi';
@@ -90,4 +127,42 @@ export class HeaderComponent implements OnInit {
     // Muestra el actionSheet
     await actionSheet.present();
   }
+
+
+
+  getColorSecu() {
+    if ( this.rubro === 'MI') {
+      this.colores = {
+        primario : 'MI-PRIMARIO',
+        secundario : '#fff',
+        terciario : 'MI-TERCIARIO',
+      };
+    }
+
+    if ( this.rubro === 'MM') {
+        this.colores = {
+        primario : 'MM-PRIMARIO',
+        secundario : '#aaa',
+        terciario : 'MM-TERCIARIO',
+        };
+      }
+
+    if ( this.rubro === 'CT') {
+        this.colores = {
+          primario : 'CT-PRIMARIO',
+          secundario : 'CT-SECUNDARIO',
+          terciario : 'CT-TERCIARIO',
+        };
+      }
+    if ( this.rubro === 'HG') {
+        this.colores = {
+          primario : 'HG-PRIMARIO',
+          secundario : 'HG-SECUNDARIO',
+          terciario : 'HG-TERCIARIO',
+        };
+      }
+    return this.colores.secundario;
+  }
+
+
 }

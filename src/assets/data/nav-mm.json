@@ -1,0 +1,23 @@
+[
+    {
+        "title" : "Inicio",
+        "url"   : "/mm-home",
+        "icon"  : "home"
+    },
+    {
+        "title" : "Servicios",
+        "url"   : "/mm-servicios",
+        "icon"  : "hammer"
+    },
+    {
+        "title" : "Nosotros",
+        "url"   : "/mm-nosotros",
+        "icon"  : "person"
+    },
+    {
+        "title" : "Contacto",
+        "url"   : "/mm-contacto",
+        "icon"  : "contact"
+    }
+
+  ]

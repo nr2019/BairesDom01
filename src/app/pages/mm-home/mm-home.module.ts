@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { MiHomePageRoutingModule } from './mi-home-routing.module';
+import { MmHomePageRoutingModule } from './mm-home-routing.module';
 
-import { MiHomePage } from './mi-home.page';
+import { MmHomePage } from './mm-home.page';
 import { ComponentsModule } from '../../components/components.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentsModule } from '../../components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    MiHomePageRoutingModule,
+    MmHomePageRoutingModule,
     ComponentsModule
   ],
-  declarations: [MiHomePage]
+  declarations: [MmHomePage]
 })
-export class MiHomePageModule {}
+export class MmHomePageModule {}

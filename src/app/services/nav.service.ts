@@ -15,4 +15,8 @@ export class NavService {
   getNavMi() {
     return this.http.get<InavMi[]>('./assets/data/nav-mi.json');
   }
+
+  getNavMm() {
+    return this.http.get<InavMi[]>('./assets/data/nav-mm.json');
+  }
 }

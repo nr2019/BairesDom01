@@ -40,18 +40,8 @@ export class MiNosotrosPage implements OnInit {
     this.clientes = ['Peugeot01', 'Bonafide01', 'Toyota01', 'Peugeot02', 'Bonafide02', 'Toyota02', 'Peugeot03', 'Bonafide03', 'Toyota03', 'Peugeot04', 'Bonafide04', 'Toyota04', 'Peugeot05', 'Bonafide05', 'Toyota05',];
    }
 
-   llamar( nro: any) {
-     console.log (nro);
-     if (nro === " ") {
-      this.mostrarError('La empresa seleccionada no posee número telefónico.');
-     } else{
-      this.callNumber.callNumber(nro, true)
-      .then(res => console.log('Launched dialer!', res))
-      .catch(err => console.log('Error launching dialer', err));
-     }
 
-
-   }
+   
   //click to call?
 
   //

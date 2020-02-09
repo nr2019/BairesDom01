@@ -18,8 +18,7 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
   nav: Observable<InavMi[]>;
-
-
+  
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
@@ -37,6 +36,6 @@ export class AppComponent {
       this.statusBar.styleDefault();
       this.splashScreen.hide();
     });
-
   }
+
 }

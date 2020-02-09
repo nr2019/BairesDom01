@@ -6,6 +6,18 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.leyenda{
+  font-family: 'Montserrat', sans-serif;
+  text-align: center !important;
+  margin-top: 10vh;
+  font-weight: bold;
+  margin-bottom: 5vh;
+}
+
+p{
+  font-size: 20px !important;
+  color: var(--ion-color-mi-terciario) !important;
+}
 /*
 //.contactanos{
   p{
@@ -52,9 +64,46 @@
   height: 300px !important;
 }
 */
+.mi-contacto-grid{
+  ion-item{
+    @media (max-width: 250px) {
+      text-align: right !important;
+    }
+    @media (max-width: 320px) {
+      text-align: right !important;
+    }
+    @media (max-width: 480px) {
+      text-align: right !important;
+    }
+    @media (max-width: 640px) {
+      text-align: right !important;    
+    }
+    @media (max-width: 800px) {
+      text-align: right !important;
+    }
+  }
+}
 
-
-
+.mi-contacto-titulo{
+  font-weight: bolder !important;
+  ion-icon{
+    @media (max-width: 250px) {
+      text-align: center !important;
+    }
+    @media (max-width: 320px) {
+      text-align: center !important;
+    }
+    @media (max-width: 480px) {
+      text-align: center !important;
+    }
+    @media (max-width: 640px) {
+      text-align: center !important;    
+    }
+    @media (max-width: 800px) {
+      text-align: center !important;
+    }
+  }
+}
 
 
 
@@ -291,3 +340,4 @@ main{
   -webkit-animation-duration: 2s;
   animation-duration: 2s;
 }
+

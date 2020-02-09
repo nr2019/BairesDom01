@@ -1,4 +1,4 @@
-<app-header  [navitems]="nav" [valor]="valor" seccion="NOSOTROS"></app-header>
+<app-header  [navitems]="nav" [valor]="valor" seccion="MI-NOSOTROS" [rubro]="'MI'"></app-header>
 
 <ion-content>
     <div class="mi-nosotros-container animated fadeIn">
@@ -30,7 +30,7 @@
                     </div>
                 </ion-col>
             </ion-row>
-            <ion-row>
+            <ion-row class="mi-empresa">
                 <ion-col size="12">
                     <div class="mi-nosotros-mision-container">
                       <ion-icon name="compass" class="label tamano-icono" color="mi-secundario"></ion-icon>
@@ -39,7 +39,7 @@
                     </div>
                 </ion-col>
             </ion-row>
-            <ion-row>
+            <ion-row class="mi-empresa">
                 <ion-col size="12">
                     <div class="mi-nosotros-objetivos-container">
                       <ion-icon name="locate" class="label tamano-icono" color="mi-secundario"></ion-icon>
@@ -48,23 +48,32 @@
                     </div>
                 </ion-col>
             </ion-row>
-            <ion-row>
+
+            <ion-row class="mi-empresa">
                 <ion-col size="12">
                     <div class="mi-nosotros-objetivos-container">
                       <ion-icon name="ribbon" class="label tamano-icono" color="mi-secundario"></ion-icon>
                       <h2 class="label margen-h2">Confían en nosotros</h2>
-                      <p>
-                      <ion-chip *ngFor="let cliente of clientes" color="mi-secundario">
-
-                        <ion-icon name="checkmark-circle" color="mi-terciario"></ion-icon>
-                        <ion-label color="mi-terciario">{{cliente}}</ion-label>
-                    </ion-chip>
-                    </p>
+                      <div class="confian">
+                        <ion-grid >
+                            <ion-row >
+                                <ion-col size="2" size-lg="2" size-md="6" size-sm="12" size-xs="12" *ngFor="let cliente of clientes">
+                                    <ion-chip color="mi-secundario" >
+                                        <ion-icon name="checkmark-circle" color="mi-terciario"></ion-icon>
+                                        <ion-label color="mi-terciario" class="mi-lbl">
+                                            <p>{{cliente}}</p>
+                                        </ion-label>
+                                    </ion-chip>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </div>
                     </div>
                 </ion-col>
             </ion-row>
         </ion-grid>
 
+      
         <div class="mi-empresa">
             <ion-list #lista>
             <ion-list-header>
@@ -93,7 +102,6 @@
             </ion-item-sliding>
             </ion-list>
         </div>
-        
     </div>
 
     <app-footer class="footer"></app-footer>

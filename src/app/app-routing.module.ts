@@ -31,6 +31,10 @@ const routes: Routes = [
     path: 'mi-imagen',
     loadChildren: () => import('./pages/mi-imagen/mi-imagen.module').then( m => m.MiImagenPageModule)
   },
+  {
+    path: 'mm-home',
+    loadChildren: () => import('./pages/mm-home/mm-home.module').then( m => m.MmHomePageModule)
+  },
 ];
 
 @NgModule({

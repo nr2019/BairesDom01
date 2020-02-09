@@ -1,22 +1,22 @@
 [
     {
         "title" : "Montaje industrial",
-        "url"   : "/home",
+        "url"   : "/mi-home",
         "icon"  : "nuclear"
     },
     {
         "title" : "Metalmecánica",
-        "url"   : "/chat",
+        "url"   : "/mm-home",
         "icon"  : "cog"
     },
     {
         "title" : "Construcción",
-        "url"   : "/contacts",
+        "url"   : "/ct-home",
         "icon"  : "construct"
     },
     {
         "title" : "Hogar",
-        "url"   : "/contacts",
+        "url"   : "/hg-home",
         "icon"  : "home"
     }
   ]

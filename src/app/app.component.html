@@ -8,13 +8,14 @@
     </ion-toolbar>
   </ion-header>
   <ion-content>
-    <ion-list *ngFor="let pages of nav | async">
-    <ion-menu-toggle auto-hide="true">
-      <ion-item [routerLink]="pages.url" routerDirection="forward">
-          <ion-icon [name]="pages.icon" slot="start"></ion-icon>
-              {{pages.title}} 
-      </ion-item>
-    </ion-menu-toggle>
+    <ion-list *ngFor="let pages of nav | async; let index = index">
+      <ion-menu-toggle auto-hide="true">
+        <ion-item [routerLink]="pages.url" 
+                  routerDirection="forward">
+                  <ion-icon [name]="pages.icon" slot="start"></ion-icon>
+                {{pages.title}} 
+        </ion-item>
+      </ion-menu-toggle>
     </ion-list>
   </ion-content>
 </ion-menu>

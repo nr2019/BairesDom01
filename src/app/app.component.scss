@@ -1,3 +1,14 @@
 .mi-primario{
     background-color: var(--ion-color-mi-primario) !important;
 }
+
+ion-icon{
+    color: #84B4DD !important;
+}
+
+ion-item{
+    //--color-hover: yellow !important;
+    --background-hover: #B2D8ED !important;
+    --border-color: #84B4DD !important;
+    --border-radius: 0px 5px 5px 0px;
+}
