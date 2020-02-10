@@ -1,0 +1,287 @@
+.label{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .leyenda{
+    font-family: 'Montserrat', sans-serif;
+    text-align: center !important;
+    margin-top: 10vh;
+    font-weight: bold;
+    margin-bottom: 5vh;
+  }
+  
+  p{
+    font-size: 20px !important;
+    color: var(--ion-color-mm-terciario) !important;
+  }
+  
+  .mm-contacto-grid{
+    ion-item{
+      @media (max-width: 250px) {
+        text-align: right !important;
+      }
+      @media (max-width: 320px) {
+        text-align: right !important;
+      }
+      @media (max-width: 480px) {
+        text-align: right !important;
+      }
+      @media (max-width: 640px) {
+        text-align: right !important;    
+      }
+      @media (max-width: 800px) {
+        text-align: right !important;
+      }
+    }
+  }
+  
+  .mm-contacto-titulo{
+    font-weight: bolder !important;
+    ion-icon{
+      @media (max-width: 250px) {
+        text-align: center !important;
+      }
+      @media (max-width: 320px) {
+        text-align: center !important;
+      }
+      @media (max-width: 480px) {
+        text-align: center !important;
+      }
+      @media (max-width: 640px) {
+        text-align: center !important;    
+      }
+      @media (max-width: 800px) {
+        text-align: center !important;
+      }
+    }
+  }
+  
+  @import url(https://fonts.googleapis.com/css?family=Expletus+Sans:600);
+  /*==========SCALE-IN==========*/
+  @-webkit-keyframes scale-in {
+       0%   {transform: scale(10, 10); opacity: 0;}
+      100% {transform: scale(1, 1); opacity: 1;}
+  }
+  
+  @keyframes scale-in {
+      0%   {transform: scale(10, 10); opacity: 0;}
+      100% {transform: scale(1, 1);  opacity: 1;}
+  }
+  /*==========ROLL-OUT==========*/
+  @-webkit-keyframes roll-out {
+      0%   {width: 0;}
+      100% {width: 100%; }
+  }
+  @keyframes roll-out {
+      0%   {width: 0;}
+      100% {width: 100%; }
+  }
+  body{
+     background: #392f28;
+  }
+  main{
+    width: 100%;
+    overflow: hidden;
+    font-family: 'Expletus Sans', cursive;
+  }
+  .home{
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    background: #392f28;
+    position: relative; 
+    color:  white;
+    height: 40vh !important;
+    align-content: center !important;
+    justify-content: center !important;
+    display: flex !important; 
+   
+  }
+  
+  
+  .home h1{
+    font-size: 4.1em;
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    position: absolute; 
+    top: 15vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    
+    @media (max-width: 800px) {
+      font-size: 3.1em;
+    }
+  
+    @media (max-width: 560px) {
+      font-size: 3.1em;
+    }
+  }
+  
+  .home p{
+    color: white !important;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    margin: auto;
+    position: absolute; 
+    top: 220px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    @media (max-width: 800px) {
+      font-size: 1.4em;
+      margin-top: -10% !important;
+    }
+  
+    @media (max-width: 560px) {
+      font-size: 1.3em;
+      margin-top: -5% !important;
+    }
+  }
+  
+  .home img{
+    width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: opacity(.3);
+  }
+  
+  .bar{
+    width: 100%;
+    height: 200px;
+    background: var(--ion-color-mm-primario);
+    background: linear-gradient(90deg, var(--ion-color-mm-primario) 0%, var(--ion-color-mm-secundario) 35%, var(--ion-color-mm-terciario) 100%);
+  
+    opacity: 0.3;
+    position: absolute; 
+    z-index: 0;
+    // El left o right me indica desde donde entra el efecto
+    //left: 0;
+    right: 0;
+    top: 90px;
+    -ms-transform-origin: 100% 0%;
+    -webkit-transform-origin: 100% 0%;
+    transform-origin: 100% 0%;
+     -webkit-animation: roll-out 1.2s ease-out ;
+    -moz-animation: roll-out 1.2s ease-out ;
+      animation: roll-out 1.2s ease-out ; 
+  
+   
+  }
+  .margen-label{
+    margin-left: 5% !important;
+  }
+  
+  
+  // animated
+  .animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+  
+  
+  @-webkit-keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
+  
+  
+  
+  
+  @-webkit-keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes fadeInLeft {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }
+  
+  .animated.slow {
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+  }
+  
+  

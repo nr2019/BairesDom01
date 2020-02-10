@@ -1,6 +1,3 @@
-
-
-
 .label{
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
@@ -18,52 +15,7 @@ p{
   font-size: 20px !important;
   color: var(--ion-color-mi-terciario) !important;
 }
-/*
-//.contactanos{
-  p{
-  margin-top: -12vh !important;
-  margin-left: 3%;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  font-size: 60px;
-  @media (max-width: 250px) {
-    font-size: 16px;
-  }
-  @media (max-width: 320px) {
-    font-size: 20px;
-  }
-  @media (max-width: 480px) {
-      font-size: 30px;  }
-  @media (max-width: 640px) {
-    margin-top: -70px !important;
-  }
-  @media (max-width: 800px) {
-    margin-top: -70px !important;
-  }
- 
-}
 
-.mi-contacto-img{
-  width: 100% !important;
-  height: 30vh !important;
-}
-
-.mi-contacto-grid{
-  margin-top: 70px !important;
-  width: 70%;
-  margin: auto;
-}
-
-.mi-contacto-titulo{
-  margin-left: 3%;
-}
-
-.map{
-  margin-top: 10vh !important;
-  width: 100% !important;
-  height: 300px !important;
-}
-*/
 .mi-contacto-grid{
   ion-item{
     @media (max-width: 250px) {
@@ -104,16 +56,6 @@ p{
     }
   }
 }
-
-
-
-
-
-
-
-
-
-// nueva animación
 
 @import url(https://fonts.googleapis.com/css?family=Expletus+Sans:600);
 /*==========SCALE-IN==========*/
@@ -157,7 +99,6 @@ main{
  
 }
 
-
 .home h1{
   font-size: 4.1em;
   font-family: 'Montserrat', sans-serif;
@@ -179,6 +120,7 @@ main{
 }
 
 .home p{
+  color: white !important;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5em;
   margin: auto;

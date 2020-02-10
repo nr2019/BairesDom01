@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { IMiServicios } from '../interfaces/imi-servicios';
 import { IMiGaleriaFull } from '../interfaces/imi-galeria';
 import { IMiAmigos } from '../interfaces/imi-amigos';
-import { IMiContacto } from '../interfaces/imi-contacto';
+import { IContacto } from '../interfaces/i-contacto';
 
 
 @Injectable({
@@ -43,7 +43,7 @@ export class MiSrvService {
   }
 
   getContacto() {
-    return this.http.get<IMiContacto>('./assets/data/mi-contacto.json');
+    return this.http.get<IContacto>('./assets/data/contacto.json');
   }
 
 }

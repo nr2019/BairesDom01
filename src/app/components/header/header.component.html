@@ -1,5 +1,6 @@
 <ion-header no-border >
-    <ion-toolbar color="mi-primario">
+    <!--MI-->
+    <ion-toolbar color="mi-primario" *ngIf="this.rubro === 'MI'">
         <ion-buttons slot="start" class="header-bg">
             <ion-menu-button></ion-menu-button>
         </ion-buttons>
@@ -7,7 +8,7 @@
         <ion-grid class="header-grid header-bg" *ngIf="valor == true">
             <ion-row class="header-row">
                 <ion-col *ngFor="let item of navitems | async" size="2" size-lg="2" size-md="3" size-sm="6" size-xs="6" >
-                    <ion-button size="small" shape="round" [color]="getColorSecu()" [routerLink]="item.url">
+                    <ion-button size="small" shape="round" color="mi-secundario" [routerLink]="item.url">
                         <ion-icon slot="start" [name]="item.icon" ></ion-icon>
                         <p class="btn">{{item.title}}</p>
                     </ion-button>
@@ -19,4 +20,71 @@
             Navegar
         </ion-button> 
     </ion-toolbar>
+
+    <!--MM-->
+    <ion-toolbar color="mm-primario" *ngIf="this.rubro === 'MM'">
+        <ion-buttons slot="start" class="header-bg">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        
+        <ion-grid class="header-grid header-bg" *ngIf="valor == true">
+            <ion-row class="header-row">
+                <ion-col *ngFor="let item of navitems | async" size="2" size-lg="2" size-md="3" size-sm="6" size-xs="6" >
+                    <ion-button size="small" shape="round" color="mm-secundario" [routerLink]="item.url">
+                        <ion-icon slot="start" [name]="item.icon" ></ion-icon>
+                        <p class="btn">{{item.title}}</p>
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+        <ion-button *ngIf="valor == false" shape="round"  color="mm-secundario" expand="full" (click)="menu()">
+            Navegar
+        </ion-button> 
+    </ion-toolbar>
+
+    <!--CT-->
+    <ion-toolbar color="ct-primario" *ngIf="this.rubro === 'CT'">
+        <ion-buttons slot="start" class="header-bg">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        
+        <ion-grid class="header-grid header-bg" *ngIf="valor == true">
+            <ion-row class="header-row">
+                <ion-col *ngFor="let item of navitems | async" size="2" size-lg="2" size-md="3" size-sm="6" size-xs="6" >
+                    <ion-button size="small" shape="round" color="ct-secundario" [routerLink]="item.url">
+                        <ion-icon slot="start" [name]="item.icon" ></ion-icon>
+                        <p class="btn">{{item.title}}</p>
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+        <ion-button *ngIf="valor == false" shape="round"  color="ct-secundario" expand="full" (click)="menu()">
+            Navegar
+        </ion-button> 
+    </ion-toolbar>
+
+    <!--HG-->
+    <ion-toolbar color="hg-primario" *ngIf="this.rubro === 'HG'">
+        <ion-buttons slot="start" class="header-bg">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        
+        <ion-grid class="header-grid header-bg" *ngIf="valor == true">
+            <ion-row class="header-row">
+                <ion-col *ngFor="let item of navitems | async" size="2" size-lg="2" size-md="3" size-sm="6" size-xs="6" >
+                    <ion-button size="small" shape="round" color="hg-secundario" [routerLink]="item.url">
+                        <ion-icon slot="start" [name]="item.icon" ></ion-icon>
+                        <p class="btn">{{item.title}}</p>
+                    </ion-button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+        <ion-button *ngIf="valor == false" shape="round"  color="hg-secundario" expand="full" (click)="menu()">
+            Navegar
+        </ion-button> 
+    </ion-toolbar>
+
 </ion-header>     

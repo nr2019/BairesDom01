@@ -1,4 +1,4 @@
-export interface IMiContacto {
+export interface IContacto {
     calle: string;
     numero: number;
     partido: string;

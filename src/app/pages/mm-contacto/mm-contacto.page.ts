@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
-import { Observable } from 'rxjs';
 import { InavMi } from '../../interfaces/Inav-mi';
+import { Observable } from 'rxjs';
+import { IContacto } from '../../interfaces/i-contacto';
 import { NavService } from '../../services/nav.service';
 import { Platform } from '@ionic/angular';
 import { MiSrvService } from '../../services/mi-srv.service';
-import { IContacto } from '../../interfaces/i-contacto';
 
 @Component({
-  selector: 'app-mi-contacto',
-  templateUrl: './mi-contacto.page.html',
-  styleUrls: ['./mi-contacto.page.scss'],
+  selector: 'app-mm-contacto',
+  templateUrl: './mm-contacto.page.html',
+  styleUrls: ['./mm-contacto.page.scss'],
 })
-export class MiContactoPage implements OnInit {
+export class MmContactoPage implements OnInit {
 
   nav: Observable<InavMi[]>;
   valor: boolean;
@@ -28,11 +28,10 @@ export class MiContactoPage implements OnInit {
   twitter: string;
   instagram: string;
   linkedin: string;
-
   constructor(private navService: NavService,
               private platform: Platform,
               private miService: MiSrvService
-              ) {}
+              ) { }
 
   ngOnInit() {
     this.nav = this.navService.getNavMi();
@@ -58,4 +57,5 @@ export class MiContactoPage implements OnInit {
                                                         this.linkedin = data['linkedin'];
                                                       });
   }
+
 }
