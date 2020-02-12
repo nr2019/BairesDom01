@@ -1,0 +1,331 @@
+[
+    {
+        "id" : "1",
+        "titulo"   : "Portón automático",
+        "subtitulo"   : "Portón automático de hierro con diseño moderno",
+        "descripcion"  : "Portón corredizo diseñado para complejo de viviendas localizado en la zona de Coronado, en el cuál se realizó el armado de la estructura para soportar el mismo, rieles y colocado de motor con control remoto. Para realizar este trabajo, se utilizaron 10 m de caño con rajillas las cuales permiten la visión hacia el exterior. El armado fue realizado en 9 días y la colocación y calibración en otros 2.",
+        "imagen" : "./assets/img/porton-01.jpg",
+        "galeria": [ {
+            "id" : "1",
+            "titulo"   : "Vista Frontal",
+            "subtitulo"   : "Vista frontal del portón en la cual se aprecia el diseño implementado.",
+            "imagen" : "./assets/img/porton-01.jpg"
+            },
+            {
+                "id" : "2",
+                "titulo"   : "Vista de perfil",
+                "subtitulo"   : "Vista de perfil del protón, en la cual se aprecia el grosor del mismo y el tipo de cerradura utilizada para control manual.",
+                "imagen" : "./assets/img/porton-02.jpg"
+            },
+            {
+                "id" : "3",
+                "titulo"   : "Motor con control remoto",
+                "subtitulo"   : "Motor de 220 V que articula con un módulo de radiofrecuencia para la utilización de un control remoto de apertura. El mismo tiene un alcance de 30 metros.",
+                "imagen" : "./assets/img/porton-03.jpg"
+            }]
+    },
+    {
+        "id" : "2",
+        "titulo"   : "Soldadura acero 2",
+        "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+        "descripcion"  : "Soldadura acero 2Soldadura acero 2Soldadura acero 2Soldadura acero 2Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido",
+        "imagen" : "./assets/img/mi-galeria-01.jpg"
+    },
+    {
+        "id" : "3",
+        "titulo"   : "Soldadura acero 3",
+        "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+        "descripcion"  : "Soldadura acero 3Soldadura acero 3Soldadura acero 3Soldadura acero 3Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido",
+        "imagen" : "./assets/img/mi-galeria-02.jpg",
+        "galeria": [ {
+            "id" : "1",
+            "titulo"   : "Soladura 01",
+            "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+            "imagen" : "./assets/img/mi-galeria-01.jpg"
+            },
+            {
+                "id" : "2",
+                "titulo"   : "Soladura 02",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-02.jpg"
+            },
+            {
+                "id" : "3",
+                "titulo"   : "Soladura 03",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-03.jpg"
+            },
+            {
+                "id" : "4",
+                "titulo"   : "Soladura 04",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-04.jpg"
+            },
+            {
+                "id" : "5",
+                "titulo"   : "Soladura 05",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-05.webp"
+            },
+            {
+                "id" : "6",
+                "titulo"   : "Soladura 06",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-01.jpg"
+            },
+            {
+                "id" : "7",
+                "titulo"   : "Soladura 07",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-02.jpg"
+            },
+            {
+                "id" : "8",
+                "titulo"   : "Soladura 08",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-03.jpg"
+            },
+            {
+                "id" : "9",
+                "titulo"   : "Soladura 09",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-03.jpg"
+            },
+            {
+                "id" : "10",
+                "titulo"   : "Soladura 10",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-05.webp"
+            }]
+    },
+    {
+        "id" : "4",
+        "titulo"   : "Soldadura acero 4",
+        "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+        "descripcion"  : "Soldadura acero 4Soldadura acero 4Soldadura acero 4Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido",
+        "imagen" : "./assets/img/mi-galeria-03.jpg"
+    },
+    {
+        "id" : "5",
+        "titulo"   : "Soldadura acero 5",
+        "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+        "descripcion"  : "Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido",
+        "imagen" : "./assets/img/costura.jpg",
+        "galeria": [ {
+            "id" : "1",
+            "titulo"   : "Soladura 01",
+            "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+            "imagen" : "./assets/img/mi-galeria-01.jpg"
+            },
+            {
+                "id" : "2",
+                "titulo"   : "Soladura 02",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-02.jpg"
+            },
+            {
+                "id" : "3",
+                "titulo"   : "Soladura 03",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-03.jpg"
+            },
+            {
+                "id" : "4",
+                "titulo"   : "Soladura 04",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-04.jpg"
+            },
+            {
+                "id" : "5",
+                "titulo"   : "Soladura 05",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-05.webp"
+            },
+            {
+                "id" : "6",
+                "titulo"   : "Soladura 06",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-01.jpg"
+            },
+            {
+                "id" : "7",
+                "titulo"   : "Soladura 07",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-02.jpg"
+            },
+            {
+                "id" : "8",
+                "titulo"   : "Soladura 08",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-03.jpg"
+            },
+            {
+                "id" : "9",
+                "titulo"   : "Soladura 09",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-03.jpg"
+            },
+            {
+                "id" : "10",
+                "titulo"   : "Soladura 10",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-05.webp"
+            }]
+    },    
+    {
+        "id" : "6",
+        "titulo"   : "Soldadura acero 6",
+        "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+        "descripcion"  : "Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido",
+        "imagen" : "./assets/img/costura.jpg"
+    },
+    {
+        "id" : "7",
+        "titulo"   : "Soldadura acero 7",
+        "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+        "descripcion"  : "Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido",
+        "imagen" : "./assets/img/costura.jpg",
+        "galeria": [ {
+            "id" : "1",
+            "titulo"   : "Soladura 01",
+            "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+            "imagen" : "./assets/img/mi-galeria-01.jpg"
+            },
+            {
+                "id" : "2",
+                "titulo"   : "Soladura 02",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-02.jpg"
+            },
+            {
+                "id" : "3",
+                "titulo"   : "Soladura 03",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-03.jpg"
+            },
+            {
+                "id" : "4",
+                "titulo"   : "Soladura 04",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-04.jpg"
+            },
+            {
+                "id" : "5",
+                "titulo"   : "Soladura 05",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-05.webp"
+            },
+            {
+                "id" : "6",
+                "titulo"   : "Soladura 06",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-01.jpg"
+            },
+            {
+                "id" : "7",
+                "titulo"   : "Soladura 07",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-02.jpg"
+            },
+            {
+                "id" : "8",
+                "titulo"   : "Soladura 08",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-03.jpg"
+            },
+            {
+                "id" : "9",
+                "titulo"   : "Soladura 09",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-03.jpg"
+            },
+            {
+                "id" : "10",
+                "titulo"   : "Soladura 10",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-05.webp"
+            }]
+    },
+    {
+        "id" : "8",
+        "titulo"   : "Soldadura acero 8",
+        "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+        "descripcion"  : "Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido",
+        "imagen" : "./assets/img/costura.jpg"
+    },
+    {
+        "id" : "9",
+        "titulo"   : "Soldadura acero 9",
+        "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+        "descripcion"  : "Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido",
+        "imagen" : "./assets/img/costura.jpg",
+        "galeria": [ {
+            "id" : "1",
+            "titulo"   : "Soladura 01",
+            "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+            "imagen" : "./assets/img/mi-galeria-01.jpg"
+            },
+            {
+                "id" : "2",
+                "titulo"   : "Soladura 02",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-02.jpg"
+            },
+            {
+                "id" : "3",
+                "titulo"   : "Soladura 03",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-03.jpg"
+            },
+            {
+                "id" : "4",
+                "titulo"   : "Soladura 04",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-04.jpg"
+            },
+            {
+                "id" : "5",
+                "titulo"   : "Soladura 05",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-05.webp"
+            },
+            {
+                "id" : "6",
+                "titulo"   : "Soladura 06",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-01.jpg"
+            },
+            {
+                "id" : "7",
+                "titulo"   : "Soladura 07",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-02.jpg"
+            },
+            {
+                "id" : "8",
+                "titulo"   : "Soladura 08",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-03.jpg"
+            },
+            {
+                "id" : "9",
+                "titulo"   : "Soladura 09",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-03.jpg"
+            },
+            {
+                "id" : "10",
+                "titulo"   : "Soladura 10",
+                "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+                "imagen" : "./assets/img/mi-galeria-05.webp"
+            }]
+    },
+    {
+        "id" : "10",
+        "titulo"   : "Soldadura acero 10",
+        "subtitulo"   : "Soldadura acero inoxidable con doble costura",
+        "descripcion"  : "Esta es una descripción muy larga del servicio anunciado, en donde se explica todo sobre el producto ofrecido",
+        "imagen" : "./assets/img/costura.jpg"
+    }
+
+  ]

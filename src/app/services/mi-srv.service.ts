@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { IMiServicios } from '../interfaces/imi-servicios';
-import { IMiGaleriaFull } from '../interfaces/imi-galeria';
-import { IMiAmigos } from '../interfaces/imi-amigos';
+import { IServicios } from '../interfaces/i-servicios';
+import { IGaleriaFull } from '../interfaces/i-galeria';
+import { IAmigos } from '../interfaces/i-amigos';
 import { IContacto } from '../interfaces/i-contacto';
 
 
@@ -11,17 +11,17 @@ import { IContacto } from '../interfaces/i-contacto';
 })
 export class MiSrvService {
   servicios: any;
-  
+
   valores: any = [];
-  
+
   constructor(private http: HttpClient) { }
 
-  getServicios(){
-    this.servicios = this.http.get<IMiServicios[]>('./assets/data/mi-servicios.json');
+  getServicios() {
+    this.servicios = this.http.get<IServicios[]>('./assets/data/mi-servicios.json');
     return this.servicios;
   }
 
-  buscarServicio( id: number ): IMiServicios[] {
+  buscarServicio( id: number ): IServicios[] {
     console.log(id);
     let respuesta: any;
 
@@ -35,11 +35,11 @@ export class MiSrvService {
   }
 
   getGaleria() {
-    return this.http.get<IMiGaleriaFull[]>('./assets/data/mi-galeria.json');
+    return this.http.get<IGaleriaFull[]>('./assets/data/mi-galeria.json');
   }
 
   getAmigos() {
-    return this.http.get<IMiAmigos[]>('./assets/data/mi-amigos.json');
+    return this.http.get<IAmigos[]>('./assets/data/mi-amigos.json');
   }
 
   getContacto() {

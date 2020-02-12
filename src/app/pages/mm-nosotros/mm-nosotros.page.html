@@ -1,0 +1,108 @@
+<app-header  [navitems]="nav" [valor]="valor" seccion="MM-NOSOTROS" [rubro]="'MM'"></app-header>
+
+<ion-content>
+    <div class="mm-nosotros-container animated fadeIn">
+        <h1 class="animated fadeIn slow " text-center>BairesDom</h1>        
+    </div>
+    <div class="mm-nosotros-img-container">
+        <img class="mm-nosotros-img animated fadeIn slow" src="../../../assets/img/mm-nosotros.jpg" >
+    </div>
+
+
+    <div class="mm-nosotros-container animated fadeIn ">
+        <ion-grid >
+            <ion-row>
+                <ion-col size="12">
+                    <h2 text-center>Una empresa construída con sueños</h2>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="12"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas aperiam minus explicabo qui nobis ab voluptatem omnis quo, error dolorum sunt. Alias itaque aliquam earum ab eaque laborum mollitia corporis.</p></ion-col>
+            </ion-row>
+
+            <ion-row class="mm-empresa">
+                <ion-col size="12">
+                    <div class="mm-nosotros-vision-container">
+                      <ion-icon name="eye" class="label tamano-icono" color="mm-secundario"></ion-icon>
+                      <h2 class="label margen-h2">Nuestra Visión</h2>
+
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa quaerat sint corporis, doloribus reprehenderit ducimus dicta doloremque aut sed explicabo eum fuga porro ipsum molestias, accusantium necessitatibus alias laudantium!</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row class="mm-empresa">
+                <ion-col size="12">
+                    <div class="mm-nosotros-mision-container">
+                      <ion-icon name="compass" class="label tamano-icono" color="mm-secundario"></ion-icon>
+                      <h2 class="label margen-h2">Nuestra Misión</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa quaerat sint corporis, doloribus reprehenderit ducimus dicta doloremque aut sed explicabo eum fuga porro ipsum molestias, accusantium necessitatibus alias laudantium!</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+            <ion-row class="mm-empresa">
+                <ion-col size="12">
+                    <div class="mm-nosotros-objetivos-container">
+                      <ion-icon name="locate" class="label tamano-icono" color="mm-secundario"></ion-icon>
+                      <h2 class="label margen-h2">Nuestros Objetivos</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum ipsa quaerat sint corporis, doloribus reprehenderit ducimus dicta doloremque aut sed explicabo eum fuga porro ipsum molestias, accusantium necessitatibus alias laudantium!</p>
+                    </div>
+                </ion-col>
+            </ion-row>
+
+            <ion-row class="mm-empresa">
+                <ion-col size="12">
+                    <div class="mm-nosotros-objetivos-container">
+                      <ion-icon name="ribbon" class="label tamano-icono" color="mm-secundario"></ion-icon>
+                      <h2 class="label margen-h2">Confían en nosotros</h2>
+                      <div class="confian">
+                        <ion-grid >
+                            <ion-row >
+                                <ion-col size="2" size-lg="2" size-md="6" size-sm="12" size-xs="12" *ngFor="let cliente of clientes">
+                                    <ion-chip color="mm-secundario" >
+                                        <ion-icon name="checkmark-circle" color="mm-terciario"></ion-icon>
+                                        <ion-label color="mm-terciario" class="mm-lbl">
+                                            <p>{{cliente}}</p>
+                                        </ion-label>
+                                    </ion-chip>
+                                </ion-col>
+                            </ion-row>
+                        </ion-grid>
+                    </div>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+
+      
+        <div class="mm-empresa">
+            <ion-list #lista>
+            <ion-list-header>
+                <h2>Recorremos nuestro camnio junto a</h2>
+            </ion-list-header>
+            <ion-item-sliding *ngFor="let amigo of amigos | async">
+                <ion-item >
+                    <ion-avatar class="mm-nosotros-avatar" slot="start">
+                        <img [src]="amigo.imagen">
+                    </ion-avatar>
+                    <ion-label class="mm-nosotros-texto">
+                        <h2>{{amigo.empresa}}</h2>
+                        <p>{{amigo.descripcion}}</p>
+                        <p>{{amigo.telefono}}</p>
+                        <a [href]="amigo.url" target="_blank">{{amigo.url}}</a>
+                    </ion-label>
+                    <ion-icon slot="end" name="swap" color="mm-secundario"></ion-icon>
+                </ion-item>
+                <ion-item-options side="end">
+    
+                <ion-item-option color="secondary" (click)="llamar(amigo.telefono)">
+                    <ion-icon slot="icon-only" name="call"></ion-icon>
+                </ion-item-option>
+        
+                </ion-item-options>
+            </ion-item-sliding>
+            </ion-list>
+        </div>
+    </div>
+
+    <app-footer class="footer"></app-footer>
+</ion-content>

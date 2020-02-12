@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IMiServicios } from '../../interfaces/imi-servicios';
+import { IMiServicios } from '../../interfaces/i-servicios';
 import { MiSrvService } from '../../services/mi-srv.service';
 import { ModalController } from '@ionic/angular';
 import { MiImagenPage } from '../../pages/mi-imagen/mi-imagen.page';

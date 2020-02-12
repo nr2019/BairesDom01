@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import { InavMi } from '../../interfaces/Inav-mi';
 import { NavService } from '../../services/nav.service';
 import { Platform, Events } from '@ionic/angular';
-import { IMiServicios } from '../../interfaces/imi-servicios';
+import { IServicios } from '../../interfaces/i-servicios';
 import { MiSrvService } from '../../services/mi-srv.service';
 
 @Component({
@@ -14,9 +14,9 @@ import { MiSrvService } from '../../services/mi-srv.service';
 export class MiServiciosPage implements OnInit {
 
   mostrarServicio: boolean = false; //Al hacer click en un servicio se activa para que sea mostrado el componente "servicio"
-  srvClick: IMiServicios; //any; 
+  srvClick: IServicios; 
   nav: Observable<InavMi[]>;
-  servicios: Observable<IMiServicios[]>;
+  servicios: Observable<IServicios[]>;
   valor: boolean; // Identifica que slide mostrar dependiendo la resolución
   // Opciones para slide grande
   slideOptsGrande = {
@@ -71,25 +71,23 @@ export class MiServiciosPage implements OnInit {
     if ( this.platform.width() < 560 ) {
       //chico
       this.valor = false;
-     // this.opcionesSlide = 'slideOptsChico';
     } else {
       // grande
       this.valor = true;
-     // this.opcionesSlide = 'slideOptsGrande';
     }
 
     //Carga de servicios
     this.servicios = this.miService.getServicios();
   }
 
-  cardClick(servicio: IMiServicios) {
-    
+  cardClick(servicio: IServicios) {
+
     this.mostrarServicio = true;
     this.srvClick = servicio;
   }
 
 
-  slideClick(event){
-    //console.log(event);
+  slideClick(event) {
+
   }
 }

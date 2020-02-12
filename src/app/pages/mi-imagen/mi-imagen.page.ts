@@ -25,12 +25,7 @@ export class MiImagenPage implements OnInit {
   }
 
   zoom(zoomIn: boolean) {
-/*    let zoom = this.slider.nativeElement.zoom;
-    if (zoomIn) {
-      zoom.in();
-    } else {
-      zoom.out();
-    }*/
+
   }
 
   close() {

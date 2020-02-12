@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import { InavMi } from '../../interfaces/Inav-mi';
 import { NavService } from '../../services/nav.service';
 import { Platform, IonList, ToastController } from '@ionic/angular';
-import { IMiAmigos } from '../../interfaces/imi-amigos';
+import { IAmigos } from '../../interfaces/i-amigos';
 import { MiSrvService } from '../../services/mi-srv.service';
 import { CallNumber } from '@ionic-native/call-number/ngx';
 
@@ -15,7 +15,7 @@ import { CallNumber } from '@ionic-native/call-number/ngx';
 })
 export class MiNosotrosPage implements OnInit {
   nav: Observable<InavMi[]>;
-  amigos: Observable<IMiAmigos[]>;
+  amigos: Observable<IAmigos[]>;
   valor: boolean;
   clientes: any;
   constructor( private navService: NavService,

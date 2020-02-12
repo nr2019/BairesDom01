@@ -4,7 +4,7 @@ import { InavMi } from '../../interfaces/Inav-mi';
 import { NavService } from '../../services/nav.service';
 import { Platform, ModalController } from '@ionic/angular';
 import { MiSrvService } from '../../services/mi-srv.service';
-import { IMiGaleria } from '../../interfaces/imi-galeria';
+import { IGaleria } from '../../interfaces/i-galeria';
 import { MiImagenPage } from '../mi-imagen/mi-imagen.page';
 
 @Component({
@@ -23,7 +23,7 @@ export class MiPortfolioPage implements OnInit {
 
   nav: Observable<InavMi[]>;
   galeriaFull: any;
-  galerias: IMiGaleria[] = [];
+  galerias: IGaleria[] = [];
   valor: boolean;
 
   constructor(private navService: NavService,

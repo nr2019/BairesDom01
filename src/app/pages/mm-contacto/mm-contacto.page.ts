@@ -34,7 +34,7 @@ export class MmContactoPage implements OnInit {
               ) { }
 
   ngOnInit() {
-    this.nav = this.navService.getNavMi();
+    this.nav = this.navService.getNavMm();
     // En caso de que sea menor a 560 px cambia el deader por un action-sheet
     if ( this.platform.width() < 560 ) {
       this.valor = false;
