@@ -20,7 +20,7 @@ export class MiNosotrosPage implements OnInit {
   clientes: any;
   constructor( private navService: NavService,
                private platform: Platform,
-               private miService: MiSrvService,
+               private service: MiSrvService,
                private toastCtrl: ToastController,
                private callNumber: CallNumber ) { }
 
@@ -32,12 +32,13 @@ export class MiNosotrosPage implements OnInit {
       //this.valor = 'condense';
       this.valor = false;
       console.log(this.valor);
-    } else{
+    } else {
       this.valor = true;
     }
 
-    this.amigos = this.miService.getAmigos();
-    this.clientes = ['Peugeot01', 'Bonafide01', 'Toyota01', 'Peugeot02', 'Bonafide02', 'Toyota02', 'Peugeot03', 'Bonafide03', 'Toyota03', 'Peugeot04', 'Bonafide04', 'Toyota04', 'Peugeot05', 'Bonafide05', 'Toyota05',];
+    this.amigos = this.service.getAmigos();
+    //this.clientes = ['Peugeot01', 'Bonafide01', 'Toyota01', 'Peugeot02', 'Bonafide02', 'Toyota02', 'Peugeot03', 'Bonafide03', 'Toyota03', 'Peugeot04', 'Bonafide04', 'Toyota04', 'Peugeot05', 'Bonafide05', 'Toyota05',];
+    this.clientes = this.service.getClientes();
    }
 
 

@@ -57,11 +57,11 @@
                       <div class="confian">
                         <ion-grid >
                             <ion-row >
-                                <ion-col size="2" size-lg="2" size-md="6" size-sm="12" size-xs="12" *ngFor="let cliente of clientes">
+                                <ion-col size="2" size-lg="2" size-md="6" size-sm="12" size-xs="12" *ngFor="let cliente of clientes | async">
                                     <ion-chip color="mi-secundario" >
                                         <ion-icon name="checkmark-circle" color="mi-terciario"></ion-icon>
                                         <ion-label color="mi-terciario" class="mi-lbl">
-                                            <p>{{cliente}}</p>
+                                            <p>{{cliente.cliente}}</p>
                                         </ion-label>
                                     </ion-chip>
                                 </ion-col>

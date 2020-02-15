@@ -4,20 +4,19 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { PresentacionPageRoutingModule } from './presentacion-routing.module';
+import { MmServiciosPageRoutingModule } from './mm-servicios-routing.module';
 
-import { PresentacionPage } from './presentacion.page';
+import { MmServiciosPage } from './mm-servicios.page';
 import { ComponentsModule } from '../../components/components.module';
-
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PresentacionPageRoutingModule,
+    MmServiciosPageRoutingModule,
     ComponentsModule
   ],
-  declarations: [PresentacionPage]
+  declarations: [MmServiciosPage]
 })
-export class PresentacionPageModule {}
+export class MmServiciosPageModule {}

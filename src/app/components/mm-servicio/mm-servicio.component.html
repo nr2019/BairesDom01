@@ -1,0 +1,50 @@
+<div class="mm-servicio-comp animated fadeIn" >
+  <ion-grid >
+    <ion-row>
+      <div class="mm-srv-titulo">
+        <h1>{{srvClick.titulo}}</h1>
+      </div>
+    </ion-row>
+    <ion-row class="mm-medio-r">
+      <ion-col size="6" size-lg="4" size-md="4" size-sm="12" size-xs="12">
+        <div class="mm-srv-div-img">
+          <img [src]="srvClick.imagen" class="mm-srv-img sombra">
+        </div>  
+        </ion-col>
+        <ion-col size="6" size-lg="8" size-md="8" size-sm="12" size-xs="12">
+          <div class="mm-srv-desc" >
+            <h3>{{srvClick.descripcion}}</h3>
+          </div>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-item-divider class="divider-01">
+    <ion-label>
+      <h1>Portfolio</h1>
+    </ion-label>
+  </ion-item-divider>
+ 
+
+  <div class="mm-srv-galeria">
+
+    <ion-slides mode="ios" 
+                [options]="sliderOpts">
+        <ion-slide *ngFor="let l of srvClick.galeria" >
+          
+            <span>
+              <img class="mm-images" [src]="l.imagen" tappable (click)="openPreview(l.imagen)"><img>  
+            </span>
+            <span class="mm-srv-gal-desc">
+                <h2>
+                  {{l.titulo}}
+                </h2>
+                <h3>
+                  {{l.subtitulo}}
+                </h3>
+            </span>
+          
+        </ion-slide>
+    </ion-slides>
+  </div>
+</div>

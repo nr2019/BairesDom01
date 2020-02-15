@@ -1,18 +1,17 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { Observable } from 'rxjs';
-import { InavMi } from '../../interfaces/Inav-mi';
-import { NavService } from '../../services/nav.service';
-import { Platform, Events } from '@ionic/angular';
+import { Component, OnInit } from '@angular/core';
 import { IServicios } from '../../interfaces/i-servicios';
-import { MiSrvService } from '../../services/mi-srv.service';
+import { InavMi } from '../../interfaces/Inav-mi';
+import { Observable } from 'rxjs';
+import { NavService } from '../../services/nav.service';
+import { MmSrvService } from '../../services/mm-srv.service';
+import { Platform } from '@ionic/angular';
 
 @Component({
-  selector: 'app-mi-servicios',
-  templateUrl: './mi-servicios.page.html',
-  styleUrls: ['./mi-servicios.page.scss'],
+  selector: 'app-mm-servicios',
+  templateUrl: './mm-servicios.page.html',
+  styleUrls: ['./mm-servicios.page.scss'],
 })
-export class MiServiciosPage implements OnInit {
-
+export class MmServiciosPage implements OnInit {
   mostrarServicio: boolean = false; //Al hacer click en un servicio se activa para que sea mostrado el componente "servicio"
   srvClick: IServicios; 
   nav: Observable<InavMi[]>;
@@ -60,13 +59,11 @@ export class MiServiciosPage implements OnInit {
   };
 
   constructor(private navService: NavService,
-              private service: MiSrvService,
-              private platform: Platform,
-              ) { }
+              private service: MmSrvService,
+              private platform: Platform) { }
 
   ngOnInit() {
-
-    this.nav = this.navService.getNavMi();
+    this.nav = this.navService.getNavMm();
     //En caso de que sea menor a 560 px cambia el deader por un action-sheet
     if ( this.platform.width() < 560 ) {
       //chico
@@ -79,7 +76,6 @@ export class MiServiciosPage implements OnInit {
     //Carga de servicios
     this.servicios = this.service.getServicios();
   }
-
   cardClick(servicio: IServicios) {
 
     this.mostrarServicio = true;
@@ -91,3 +87,4 @@ export class MiServiciosPage implements OnInit {
 
   }
 }
+

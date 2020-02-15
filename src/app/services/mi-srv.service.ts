@@ -4,6 +4,7 @@ import { IServicios } from '../interfaces/i-servicios';
 import { IGaleriaFull } from '../interfaces/i-galeria';
 import { IAmigos } from '../interfaces/i-amigos';
 import { IContacto } from '../interfaces/i-contacto';
+import { ICliente } from '../interfaces/i-cliente';
 
 
 @Injectable({
@@ -46,4 +47,7 @@ export class MiSrvService {
     return this.http.get<IContacto>('./assets/data/contacto.json');
   }
 
+  getClientes() {
+    return this.http.get<ICliente>('./assets/data/clientes.json');
+  }
 }

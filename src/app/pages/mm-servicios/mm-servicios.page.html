@@ -1,0 +1,26 @@
+<app-header  [navitems]="nav" [valor]="valor" seccion="MM-SERVICIOS" [rubro]="'MM'"></app-header>
+
+<ion-content>
+    <div class="slide-srv animated fadeInRight slow">
+        <ion-slides #slides [options]= "slideOptsGrande"  pager="true">
+            <ion-slide *ngFor="let servicio of servicios | async"  color="dark">
+                <ion-card class="sombra"> 
+                    <ion-card-header>
+                        <ion-card-title (click)="cardClick(servicio)">{{servicio.titulo}}</ion-card-title>
+                        <ion-card-subtitle>{{servicio.subtitulo}}</ion-card-subtitle>
+                    </ion-card-header>
+                    <img [src]="servicio.imagen" (click)="cardClick(servicio)">
+                </ion-card>
+            </ion-slide>
+        </ion-slides>
+    </div>
+    <div class="srv-vacio animated fadeIn slow"  *ngIf="mostrarServicio == false">
+        <p>Seleccione un servicio</p>
+    </div>
+    
+    <app-mi-servicio *ngIf="mostrarServicio" 
+                    [srvClick] = "srvClick">
+    </app-mi-servicio>
+
+    <app-footer class="footer"></app-footer>
+</ion-content>

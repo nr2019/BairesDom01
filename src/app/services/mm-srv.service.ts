@@ -4,6 +4,7 @@ import { IServicios } from '../interfaces/i-servicios';
 import { IGaleriaFull } from '../interfaces/i-galeria';
 import { IAmigos } from '../interfaces/i-amigos';
 import { IContacto } from '../interfaces/i-contacto';
+import { ICliente } from '../interfaces/i-cliente';
 
 @Injectable({
   providedIn: 'root'
@@ -15,7 +16,7 @@ export class MmSrvService {
   constructor(private http: HttpClient) { }
 
 
-  getServicios(){
+  getServicios() {
     this.servicios = this.http.get<IServicios[]>('./assets/data/mi-servicios.json');
     return this.servicios;
   }
@@ -43,6 +44,10 @@ export class MmSrvService {
 
   getContacto() {
     return this.http.get<IContacto>('./assets/data/contacto.json');
+  }
+
+  getClientes() {
+    return this.http.get<ICliente>('./assets/data/clientes.json');
   }
 
 }

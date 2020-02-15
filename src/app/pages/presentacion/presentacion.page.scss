@@ -1,68 +1,178 @@
-.presentacion{
+/*
+.presentacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
     height: 100vh;
-    content: "";
-    background-color: aqua;
-    //margin-left: 3%;
-    //margin-right: 3%;
-}
+    font-family: 'Roboto', sans-serif;
+  }
+  .presentacion .credit {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #000;
+  }
+  .presentacion .options {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow: hidden;
+    min-width: 600px;
+    max-width: 900px;
+    //min-width: 600px;
+    //max-width: 900px;
+    width: calc(100% - 100px);
+    height: 400px;
+  }
+  @media screen and (max-width: 718px) {
+    .presentacion .options {
+      min-width: 520px;
+    }
+    .presentacion .options .option:nth-child(5) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 638px) {
+    .presentacion .options {
+      min-width: 440px;
+    }
+    .presentacion .options .option:nth-child(4) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 558px) {
+    .presentacion .options {
+      min-width: 360px;
+    }
+    .presentacion .options .option:nth-child(3) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 478px) {
+    .presentacion .options {
+      min-width: 280px;
+    }
+    .presentacion .options .option:nth-child(2) {
+      display: none;
+    }
+  }
+  .presentacion .options .option {
+    position: relative;
+    overflow: hidden;
+    min-width: 60px;
+    margin: 10px;
+    background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+    background-size: auto 120%;
+    background-position: center;
+    cursor: pointer;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  }
+  .presentacion .options .option:nth-child(1) {
+    --defaultBackground:#ED5565;
+  }
+  .presentacion .options .option:nth-child(2) {
+    --defaultBackground:#FC6E51;
+  }
+  .presentacion .options .option:nth-child(3) {
+    --defaultBackground:#FFCE54;
+  }
+  .presentacion .options .option:nth-child(4) {
+    --defaultBackground:#2ECC71;
+  }
+  .presentacion .options .option:nth-child(5) {
+    --defaultBackground:#5D9CEC;
+  }
+  .presentacion .options .option:nth-child(6) {
+    --defaultBackground:#AC92EC;
+  }
+  .presentacion .options .option.active {
+    flex-grow: 10000;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    max-width: 600px;
+    margin: 0px;
+    border-radius: 40px;
+    background-size: auto 100%;
+  }
+  .presentacion .options .option.active .shadow {
+    box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
+  }
+  .presentacion .options .option.active .label {
+    bottom: 20px;
+    left: 20px;
+  }
+  .presentacion .options .option.active .label .info > div {
+    left: 0px;
+    opacity: 1;
+  }
+  .presentacion .options .option:not(.active) {
+    flex-grow: 1;
+    border-radius: 30px;
+  }
+  .presentacion .options .option:not(.active) .shadow {
+    bottom: -40px;
+    box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
+  }
+  .presentacion .options .option:not(.active) .label {
+    bottom: 10px;
+    left: 10px;
+  }
+  .presentacion .options .option:not(.active) .label .info > div {
+    left: 20px;
+    opacity: 0;
+  }
+  .presentacion .options .option .shadow {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 120px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  }
+  .presentacion .options .option .label {
+    display: flex;
+    position: absolute;
+    right: 0px;
+    height: 40px;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  }
+  .presentacion .options .option .label .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    max-width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: white;
+    color: var(--defaultBackground);
+  }
+  .presentacion .options .option .label .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    color: white;
+    white-space: pre;
+  }
+  .presentacion .options .option .label .info > div {
+    position: relative;
+    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
+  }
+  .presentacion .options .option .label .info .main {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  .presentacion .options .option .label .info .sub {
+    transition-delay: .1s;
+  }*/
 
-// Grid presentación
-.pr-grid{
-    width: 100% !important;
-}
+  $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
 
-// Grid presentación - Montaje industrial
-.pr-mi{
-    border: 2px solid black;
-    height: 40vh !important;
-    background-color: gray;
-}
-
-// Grid presentación - Metalmecánica
-.pr-me{
-    border: 2px solid black;
-    height: 40vh !important;
-    background-color:#921212;
-}
-
-// Grid presentación - Construcción
-.pr-const{
-    border: 2px solid black;
-    height: 30vh !important;
-    background-color:#921212;
-}
-
-// Grid presentación - Hogar
-.pr-hogar{
-    border: 2px solid black;
-    height: 30vh !important;
-    background-color: gray;
-}
-
-// Grid presentación - Logo
-.pr-logo{
-    border: 2px solid black;
-    height: 19vh !important;
-    background-color:#351470;    
-}
-
-// Grid presentación - footer
-.pr-footer{
-    border: 2px solid black;
-    height: 10vh !important;
-    background-color:#985612;    
-}
-
-
-
-
-
-
-///////////////////////
-
-$optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
-
-body {
+.presentacion {
    display:flex;
    flex-direction:row;
    justify-content:center;
@@ -93,6 +203,7 @@ body {
       @for $i from 1 through 4 {
          @media screen and (max-width:798px - $i*80) {
             min-width:600px - $i*80;
+            
             .option:nth-child(#{6-$i}) {
                display:none;
             }
@@ -123,7 +234,7 @@ body {
          &.active {
             flex-grow:10000;
             transform:scale(1);
-            
+            //max-width:200px; //Achica el card, falta el margen entre cards
             max-width:600px;
             margin:0px;
             border-radius:40px;
@@ -219,4 +330,3 @@ body {
       }
    }
 }
-

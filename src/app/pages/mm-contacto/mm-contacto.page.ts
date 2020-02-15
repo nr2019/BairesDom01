@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 import { IContacto } from '../../interfaces/i-contacto';
 import { NavService } from '../../services/nav.service';
 import { Platform } from '@ionic/angular';
-import { MiSrvService } from '../../services/mi-srv.service';
+import { MmSrvService } from '../../services/mm-srv.service';
 
 @Component({
   selector: 'app-mm-contacto',
@@ -30,7 +30,7 @@ export class MmContactoPage implements OnInit {
   linkedin: string;
   constructor(private navService: NavService,
               private platform: Platform,
-              private miService: MiSrvService
+              private service: MmSrvService
               ) { }
 
   ngOnInit() {
@@ -42,7 +42,7 @@ export class MmContactoPage implements OnInit {
       this.valor = true;
     }
 
-    this.miService.getContacto().subscribe ((data: IContacto) => {
+    this.service.getContacto().subscribe ((data: IContacto) => {
                                                         this.calle = data['calle'];
                                                         this.numero = data['numero'];
                                                         this.partido = data['partido'];

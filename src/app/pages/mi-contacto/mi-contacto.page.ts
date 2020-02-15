@@ -31,7 +31,7 @@ export class MiContactoPage implements OnInit {
 
   constructor(private navService: NavService,
               private platform: Platform,
-              private miService: MiSrvService
+              private service: MiSrvService
               ) {}
 
   ngOnInit() {
@@ -43,7 +43,7 @@ export class MiContactoPage implements OnInit {
       this.valor = true;
     }
 
-    this.miService.getContacto().subscribe ((data: IContacto) => {
+    this.service.getContacto().subscribe ((data: IContacto) => {
                                                         this.calle = data['calle'];
                                                         this.numero = data['numero'];
                                                         this.partido = data['partido'];

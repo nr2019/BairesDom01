@@ -1,15 +1,15 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IServicios } from '../../interfaces/i-servicios';
-import { MiSrvService } from '../../services/mi-srv.service';
+import { MmSrvService } from '../../services/mm-srv.service';
 import { ModalController } from '@ionic/angular';
 import { MiImagenPage } from '../../pages/mi-imagen/mi-imagen.page';
 
 @Component({
-  selector: 'app-mi-servicio',
-  templateUrl: './mi-servicio.component.html',
-  styleUrls: ['./mi-servicio.component.scss'],
+  selector: 'app-mm-servicio',
+  templateUrl: './mm-servicio.component.html',
+  styleUrls: ['./mm-servicio.component.scss'],
 })
-export class MiServicioComponent implements OnInit{
+export class MmServicioComponent implements OnInit {
   sliderOpts = {
     zoom: false,
     autoplay: {
@@ -23,19 +23,17 @@ export class MiServicioComponent implements OnInit{
 
   @Input() srvClick: IServicios;
 
-  constructor(private miService: MiSrvService,
-              private modalCtrl: ModalController) {}
+  constructor(private miService: MmSrvService,
+              private modalCtrl: ModalController) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   openPreview(imagen) {
     this.modalCtrl.create({
       component: MiImagenPage,
-      componentProps:{
+      componentProps: {
          img: imagen
       }
     }).then(modal => modal.present());
   }
-
 }
