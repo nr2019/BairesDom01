@@ -1,332 +1,67 @@
-/*
 .presentacion {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
-  }
-  .presentacion .credit {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    color: #000;
-  }
-  .presentacion .options {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    overflow: hidden;
-    min-width: 600px;
-    max-width: 900px;
-    //min-width: 600px;
-    //max-width: 900px;
-    width: calc(100% - 100px);
-    height: 400px;
-  }
-  @media screen and (max-width: 718px) {
-    .presentacion .options {
-      min-width: 520px;
-    }
-    .presentacion .options .option:nth-child(5) {
-      display: none;
-    }
-  }
-  @media screen and (max-width: 638px) {
-    .presentacion .options {
-      min-width: 440px;
-    }
-    .presentacion .options .option:nth-child(4) {
-      display: none;
-    }
-  }
-  @media screen and (max-width: 558px) {
-    .presentacion .options {
-      min-width: 360px;
-    }
-    .presentacion .options .option:nth-child(3) {
-      display: none;
-    }
-  }
-  @media screen and (max-width: 478px) {
-    .presentacion .options {
-      min-width: 280px;
-    }
-    .presentacion .options .option:nth-child(2) {
-      display: none;
-    }
-  }
-  .presentacion .options .option {
-    position: relative;
-    overflow: hidden;
-    min-width: 60px;
-    margin: 10px;
-    background: var(--optionBackground, var(--defaultBackground, #E6E9ED));
-    background-size: auto 120%;
-    background-position: center;
-    cursor: pointer;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-  }
-  .presentacion .options .option:nth-child(1) {
-    --defaultBackground:#ED5565;
-  }
-  .presentacion .options .option:nth-child(2) {
-    --defaultBackground:#FC6E51;
-  }
-  .presentacion .options .option:nth-child(3) {
-    --defaultBackground:#FFCE54;
-  }
-  .presentacion .options .option:nth-child(4) {
-    --defaultBackground:#2ECC71;
-  }
-  .presentacion .options .option:nth-child(5) {
-    --defaultBackground:#5D9CEC;
-  }
-  .presentacion .options .option:nth-child(6) {
-    --defaultBackground:#AC92EC;
-  }
-  .presentacion .options .option.active {
-    flex-grow: 10000;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    max-width: 600px;
-    margin: 0px;
-    border-radius: 40px;
-    background-size: auto 100%;
-  }
-  .presentacion .options .option.active .shadow {
-    box-shadow: inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
-  }
-  .presentacion .options .option.active .label {
-    bottom: 20px;
-    left: 20px;
-  }
-  .presentacion .options .option.active .label .info > div {
-    left: 0px;
-    opacity: 1;
-  }
-  .presentacion .options .option:not(.active) {
-    flex-grow: 1;
-    border-radius: 30px;
-  }
-  .presentacion .options .option:not(.active) .shadow {
-    bottom: -40px;
-    box-shadow: inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
-  }
-  .presentacion .options .option:not(.active) .label {
-    bottom: 10px;
-    left: 10px;
-  }
-  .presentacion .options .option:not(.active) .label .info > div {
-    left: 20px;
-    opacity: 0;
-  }
-  .presentacion .options .option .shadow {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    height: 120px;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-  }
-  .presentacion .options .option .label {
-    display: flex;
-    position: absolute;
-    right: 0px;
-    height: 40px;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-  }
-  .presentacion .options .option .label .icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    min-width: 40px;
-    max-width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-color: white;
-    color: var(--defaultBackground);
-  }
-  .presentacion .options .option .label .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 10px;
-    color: white;
-    white-space: pre;
-  }
-  .presentacion .options .option .label .info > div {
-    position: relative;
-    transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity 0.5s ease-out;
-  }
-  .presentacion .options .option .label .info .main {
-    font-weight: bold;
-    font-size: 1.2rem;
-  }
-  .presentacion .options .option .label .info .sub {
-    transition-delay: .1s;
-  }*/
+  display:flex !important;
+  
+  justify-content:center !important; // sumado con el    display:flex !important; centra al linea
+  vertical-align: middle !important;
+  margin-top: 20vh !important;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
-  $optionDefaultColours: #ED5565,#FC6E51,#FFCE54,#2ECC71,#5D9CEC,#AC92EC;
+.expanding {
 
-.presentacion {
-   display:flex;
-   flex-direction:row;
-   justify-content:center;
-   align-items:center;
-   overflow:hidden;
-   height:100vh;
-   
-   font-family: 'Roboto', sans-serif;
-   .credit {
-      position: absolute;
-      bottom:20px;
-      left:20px;
-      
-      color:#000;
-   }
-   .options {
-      display:flex;
-      flex-direction:row;
-      align-items:stretch;
-      overflow:hidden;
+  transition: width 0.7s ease-in-out;
+  -webkit-transition: width 0.7s ease-in-out;
+  width: 15%;
+  height: 50vh;
+  background-color: gray;
+  position: relative;
+  display: inline-block;
+  margin-right: 2px;
+  margin-left: 2px;
+  border-radius: 10px !important;
+  //box-shadow:inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black !important;
 
-      min-width:600px;
-      max-width:900px;
-      width:calc(100% - 100px);
-      
-      height:400px;
-      
-      @for $i from 1 through 4 {
-         @media screen and (max-width:798px - $i*80) {
-            min-width:600px - $i*80;
-            
-            .option:nth-child(#{6-$i}) {
-               display:none;
-            }
-         }
-      }
-      
-      .option {
-         position: relative;
-         overflow:hidden;
+}
 
-         min-width:60px;
-         margin:10px;
-         //border:0px solid --defaultColor;
+.expanding:hover{
+  width: 90%;
+  background-color: gray;
+  max-height: 50vh;
+ // background-size:auto 120%;
+}
 
-         background:var(--optionBackground, var(--defaultBackground, #E6E9ED));
-         background-size:auto 120%;
-         background-position:center;
+.sombra{  
+  box-shadow: 10px 10px 20px rgba(0,0,0,0.16), 10px 10px 20px rgba(0,0,0,0.23); // Sombra al card
+}
 
-         cursor: pointer;
+.bg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
-         transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+.bg-1 {
+  background-image: url(../../../assets/img/mi-inicio.jpg);
+  background-position: center;
+}
 
-         @for $i from 1 through length($optionDefaultColours) {
-            &:nth-child(#{$i}) {
-               --defaultBackground:#{nth($optionDefaultColours, $i)};
-            }
-         }
-         &.active {
-            flex-grow:10000;
-            transform:scale(1);
-            //max-width:200px; //Achica el card, falta el margen entre cards
-            max-width:600px;
-            margin:0px;
-            border-radius:40px;
-            
-            background-size:auto 100%;
-            .shadow {
-               box-shadow:inset 0 -120px 120px -120px black, inset 0 -120px 120px -100px black;
-            }
-            .label {
-               bottom:20px;
-               left:20px;
-               .info >div {
-                  left:0px;
-                  opacity:1;
-               }
-            }
-            /*&:active {
-               transform:scale(0.9);
-            }*/
-         }
-         &:not(.active) {
-            flex-grow:1;
-            
-            border-radius:30px;
-            .shadow {
-               bottom:-40px;
-               box-shadow:inset 0 -120px 0px -120px black, inset 0 -120px 0px -100px black;
-            }
-            .label {
-               bottom:10px;
-               left:10px;
-               .info >div {
-                  left:20px;
-                  opacity:0;
-               }
-            }
-         }
-         .shadow {
-            position: absolute;
-            bottom:0px;
-            left:0px;
-            right:0px;
-            
-            height:120px;
-            
-            transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-         }
-         .label {
-            display:flex;
-            position: absolute;
-            right:0px;
+.bg-2 {
+  background-image: url(../../../assets/img/mi-nosotros.jpg);
+  background-position: center;
+}
+.bg-3 {
+  background-image: url(../../../assets/img/mi-contacto.jpg);
+  background-position: center;
+}
+.bg-4 {
+  background-image: url(../../../assets/img/mi-galeria-01.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-            height:40px;
-            transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
-            .icon {
-               display:flex;
-               flex-direction:row;
-               justify-content:center;
-               align-items:center;
-               
-               min-width:40px;
-               max-width:40px;
-               height:40px;
-               border-radius:100%;
 
-               background-color:white;
-               color:var(--defaultBackground);
-            }
-            .info {
-               display:flex;
-               flex-direction:column;
-               justify-content:center;
-               
-               margin-left:10px;
-               
-               color:white;
-               
-               white-space: pre;
-               >div {
-                  position: relative;
-                  
-                  transition:.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), opacity .5s ease-out;
-               }
-               .main {
-                  font-weight:bold;
-                  font-size:1.2rem;
-               }
-               .sub {
-                  transition-delay:.1s;
-               }
-            }
-         }
-      }
-   }
+.icono {
+  position: fixed;
+  margin-bottom: 20px;
 }

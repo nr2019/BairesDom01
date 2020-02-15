@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
 import * as $ from 'jquery';
+import { Platform } from '@ionic/angular';
 
 @Component({
   selector: 'app-presentacion',
@@ -13,9 +14,19 @@ export class PresentacionPage implements OnInit {
   @ViewChild('div3', { static: true }) div3: ElementRef;
   @ViewChild('div4', { static: true }) div4: ElementRef;
   @ViewChild('div5', { static: true }) div5: ElementRef;
-  constructor() { }
+  valor: boolean; // Identifica que slide mostrar dependiendo la resolución
+
+  constructor(private platform: Platform) { }
 
   ngOnInit() {
+     //Se modifican botones de divs
+     if ( this.platform.width() < 560 ) {
+      //chico
+      this.valor = false;
+    } else {
+      // grande
+      this.valor = true;
+    }
   }
 
   efecto(opcion: string) {

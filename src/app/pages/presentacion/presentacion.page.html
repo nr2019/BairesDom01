@@ -1,5 +1,5 @@
 <ion-content>
-<div class="presentacion">
+<!--div class="presentacion">
   <div class="options">
     <div (click)="efecto('1')" #div1 class="option active" style="--optionBackground:url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);">
        <div class="shadow"></div>
@@ -62,5 +62,34 @@
        </div>
     </div>
  </div>
-</div>
+</div-->
+
+
+   <div class="presentacion">
+      <div class="expanding sombra bg-1">
+         <ion-button expand="block" fill="clear" routerLink="/mi-home">
+            <ion-icon slot="start" name="star" ></ion-icon>
+            <p *ngIf="valor === true">Montaje Industrial</p>
+          </ion-button>
+      </div>
+      <div class="expanding sombra bg-2">
+         <ion-button  expand="block" fill="clear" routerLink="/mm-home">
+            <ion-icon slot="start" name="star" ></ion-icon>
+            <p *ngIf="valor === true">Metalmecánica</p>  
+         </ion-button>
+      </div>
+      <div class="expanding sombra bg-3" >
+         <ion-button  expand="block" fill="clear" routerLink="/ct-home">
+            <ion-icon slot="start" name="star" ></ion-icon>
+            <p *ngIf="valor === true">Construcción</p>    
+         </ion-button>
+      </div>
+      <div class="expanding sombra bg-4">
+         <ion-button  expand="block" fill="clear" routerLink="/ct-home">
+            <ion-icon slot="start" name="star" ></ion-icon>
+            <p *ngIf="valor === true">Hogar</p> 
+         </ion-button>
+      </div>
+   
+   </div>
 </ion-content>
