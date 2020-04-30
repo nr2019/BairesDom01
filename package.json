@@ -33,7 +33,7 @@
     "cordova-plugin-geolocation": "^4.0.2",
     "core-js": "^2.6.11",
     "ionic-image-loader": "^6.3.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "rxjs": "^6.5.4",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
