@@ -5,10 +5,7 @@
     margin-right: 3% !important;
     
 }
-.mi-srv-img{
-    max-height: 40vh !important;
-    border-radius: 8px !important;
-}
+
 
 .mi-srv-titulo {
     width: 100% !important;
@@ -21,7 +18,19 @@
    margin-top: 5vh !important;
    align-content: center !important;
    justify-content: center !important;
-   display: flex !important;   
+   display: flex !important;  
+  //  height: 300px ;
+   min-height: 300px;
+  //  width: 300px !important;
+   min-width: 300px !important;
+
+}
+
+.mi-srv-img{
+  // max-height: 40vh !important;
+  border-radius: 8px !important;
+  background-size: cover;
+  background-repeat: no-repeat; 
 }
 
 .mi-srv-desc{

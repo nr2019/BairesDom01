@@ -127,13 +127,19 @@ ion-card{
 
 
 ion-card:hover{
-  --background: var(--ion-color-mi-terciario);
+  // --background: var(--ion-color-mi-terciario);
+  --background: #EEEEEE   ;
   box-shadow: inset 0px 0px 0px 3px var(--ion-color-mi-secundario);
-  ion-card-subtitle{
-    color: white;
-  }
+  // ion-card-subtitle{
+  //   color: white;
+  // }
 
 }    
+
+.slide-srv{
+  margin-left: 3%;
+  margin-right: 3%;
+}
 
 .srv-vacio{
   margin-top: 15vh !important;
@@ -244,4 +250,17 @@ p{
 .animated.slow {
     -webkit-animation-duration: 2s;
     animation-duration: 2s;
+  }
+
+  .cont-imagen-servicio{
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+  }
+  .imagen-servicio{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border-radius: 4px !important;
   }

@@ -1,71 +1,7 @@
 <ion-content>
-<!--div class="presentacion">
-  <div class="options">
-    <div (click)="efecto('1')" #div1 class="option active" style="--optionBackground:url(https://66.media.tumblr.com/6fb397d822f4f9f4596dff2085b18f2e/tumblr_nzsvb4p6xS1qho82wo1_1280.jpg);">
-       <div class="shadow"></div>
-       <div class="label">
-          <div class="icon">
-             <i class="fas fa-walking"></i>
-          </div>
-          <div class="info">
-             <div class="main">Montaje Industrial</div>
-             <div class="sub">Omuke trughte a otufta</div>
-          </div>
-       </div>
-    </div>
-    <div (click)="efecto('2')" #div2 class="option" style="--optionBackground:url(https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg);">
-       <div class="shadow"></div>
-       <div class="label">
-          <div class="icon">
-             <i class="fas fa-snowflake"></i>
-          </div>
-          <div class="info">
-             <div class="main">Metalmecánica</div>
-             <div class="sub">Omuke trughte a otufta</div>
-          </div>
-       </div>
-    </div>
-    <div (click)="efecto('3')" #div3 class="option" style="--optionBackground:url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg);">
-       <div class="shadow"></div>
-       <div class="label">
-          <div class="icon">
-             <i class="fas fa-tree"></i>
-          </div>
-          <div class="info">
-             <div class="main">Construcción</div>
-             <div class="sub">Omuke trughte a otufta</div>
-          </div>
-       </div>
-    </div>
-    <div (click)="efecto('4')" #div4 class="option" style="--optionBackground:url(https://66.media.tumblr.com/5516a22e0cdacaa85311ec3f8fd1e9ef/tumblr_o45jwvdsL11qho82wo1_1280.jpg);">
-       <div class="shadow"></div>
-       <div class="label">
-          <div class="icon">
-             <i class="fas fa-tint"></i>
-          </div>
-          <div class="info">
-             <div class="main">Hogar</div>
-             <div class="sub">Omuke trughte a otufta</div>
-          </div>
-       </div>
-    </div>
-    <div (click)="efecto('5')" #div5 class="option" style="--optionBackground:url(https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg);">
-       <div class="shadow"></div>
-       <div class="label">
-          <div class="icon">
-             <i class="fas fa-sun"></i>
-          </div>
-          <div class="info">
-             <div class="main">Contacto</div>
-             <div class="sub">Omuke trughte a otufta</div>
-          </div>
-       </div>
-    </div>
- </div>
-</div-->
 
 
-   <div class="presentacion">
+   <!--div class="presentacion">
       <div class="expanding sombra bg-1">
          <ion-button expand="block" fill="clear" routerLink="/mi-home">
             <ion-icon slot="start" name="star" ></ion-icon>
@@ -91,5 +27,60 @@
          </ion-button>
       </div>
    
+   </div-->
+<div class="presentacion">
+   <ion-grid>
+     
+      <ion-row >
+        <ion-col size="3" >
+         <div class="expanding sombra bg-1">
+            <ion-button class="altura-presenta-button" expand="block" fill="clear" routerLink="/mi-home">
+               <!-- <ion-icon slot="start" name="star" ></ion-icon> -->
+               <ion-text >
+                  <h1 class="titulo-presenta " *ngIf="valor === true">Montaje Industrial</h1>
+               </ion-text>
+               
+             </ion-button>
+         </div>
+        </ion-col>
+
+        <ion-col size="3" >
+         <div class="expanding sombra bg-2">
+            <ion-button class="altura-presenta-button" expand="block" fill="clear" routerLink="/mm-home">
+               <!-- <ion-icon slot="start" name="star" ></ion-icon> -->
+               <h1 class="titulo-presenta" *ngIf="valor === true">Metalmecánica</h1>  
+            </ion-button>
+         </div>
+        </ion-col>
+
+        <ion-col size="3">
+         <div class="expanding sombra bg-3" >
+            <ion-button class="altura-presenta-button" expand="block" fill="clear" routerLink="/ct-home">
+               <!-- <ion-icon slot="start" name="star" ></ion-icon> -->
+               <h1 class="titulo-presenta" *ngIf="valor === true">Construcción</h1>    
+            </ion-button>
+         </div>
+        </ion-col>
+
+        <ion-col size="3">
+         <div class="expanding sombra bg-4">
+            <ion-button class="altura-presenta-button" expand="block" fill="clear" routerLink="/ct-home">
+               <!-- <ion-icon slot="start" name="star" ></ion-icon> -->
+               <h1 class="titulo-presenta" *ngIf="valor === true">Hogar</h1> 
+            </ion-button>
+         </div>
+     
+       </ion-col>
+      </ion-row>
+      <ion-row class="mt-01">
+         <ion-col class="ion-text-right">
+            <p class="bd-01">Baires</p>         
+         </ion-col>
+         <ion-col class="ion-text-left">
+            <p class="bd-02">dom</p>
+         </ion-col>
+      
+      </ion-row>  
+    </ion-grid>
    </div>
 </ion-content>

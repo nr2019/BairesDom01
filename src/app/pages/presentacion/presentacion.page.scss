@@ -1,19 +1,33 @@
 .presentacion {
+  // display:flex !important;
+  // justify-content:center !important; // sumado con el    display:flex !important; centra al linea
+  // vertical-align: middle !important;
+  // margin-top: 20vh !important;
+  // margin-left: 10%;
+  // margin-right: 10%;
+
   display:flex !important;
-  
   justify-content:center !important; // sumado con el    display:flex !important; centra al linea
   vertical-align: middle !important;
-  margin-top: 20vh !important;
+  margin-top: 5vh !important;
   margin-left: 10%;
   margin-right: 10%;
+
 }
+
+// .presentacion col{
+//   min-width: 200px !important;
+// }
 
 .expanding {
 
   transition: width 0.7s ease-in-out;
   -webkit-transition: width 0.7s ease-in-out;
   width: 15%;
+  min-width: 80px !important;
+  min-height: 400px !important;
   height: 50vh;
+  // height: 55vh;
   background-color: gray;
   position: relative;
   display: inline-block;
@@ -28,6 +42,7 @@
   width: 90%;
   background-color: gray;
   max-height: 50vh;
+  // max-height: 55vh;
  // background-size:auto 120%;
 }
 
@@ -42,21 +57,32 @@
 }
 
 .bg-1 {
-  background-image: url(../../../assets/img/mi-inicio.jpg);
+  background-image: url(../../../assets/img/mi-inicio-01.jpg);
   background-position: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .bg-2 {
-  background-image: url(../../../assets/img/mi-nosotros.jpg);
+  // background-image: url(../../../assets/img/mi-nosotros.jpg);
+  background-image: url(../../../assets/img/mm-inicio-01.jpg);
   background-position: center;
+
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .bg-3 {
-  background-image: url(../../../assets/img/mi-contacto.jpg);
+  background-image: url(../../../assets/img/co-inicio-01.jpg);
   background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .bg-4 {
-  background-image: url(../../../assets/img/mi-galeria-01.jpg);
+  background-image: url(../../../assets/img/hg-inicio-01.jpg);
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -64,4 +90,41 @@
 .icono {
   position: fixed;
   margin-bottom: 20px;
+}
+
+.titulo-presenta
+{
+    display:block;
+    -webkit-transform: rotate(-90deg); 
+    -moz-transform: rotate(-90deg); 
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); //For IE support
+    // color: antiquewhite !important;
+    color: whitesmoke !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+
+
+    }
+
+.altura-presenta-button{
+  height: 100% !important;
+}
+
+.mt-01{
+  margin-top: 5% !important;
+}
+
+.bd-01{
+  font-size: xx-large;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  color: deepskyblue;
+}
+
+.bd-02{
+  font-size: xx-large;
+  font-family: 'Julius Sans One', sans-serif;
+  font-weight: bold;
+  color: red;
 }

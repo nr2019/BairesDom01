@@ -2,7 +2,7 @@
     {
         "id" : "1",
         "titulo"   : "Portón automático",
-        "subtitulo"   : "Portón automático de hierro con diseño moderno",
+        "subtitulo"   : "Portón automático de hierro moderno",
         "descripcion"  : "Portón corredizo diseñado para complejo de viviendas localizado en la zona de Coronado, en el cuál se realizó el armado de la estructura para soportar el mismo, rieles y colocado de motor con control remoto. Para realizar este trabajo, se utilizaron 10 m de caño con rajillas las cuales permiten la visión hacia el exterior. El armado fue realizado en 9 días y la colocación y calibración en otros 2.",
         "imagen" : "./assets/img/porton-01.jpg",
         "galeria": [ {

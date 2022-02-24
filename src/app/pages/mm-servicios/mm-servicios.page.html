@@ -9,7 +9,9 @@
                         <ion-card-title (click)="cardClick(servicio)">{{servicio.titulo}}</ion-card-title>
                         <ion-card-subtitle>{{servicio.subtitulo}}</ion-card-subtitle>
                     </ion-card-header>
-                    <img [src]="servicio.imagen" (click)="cardClick(servicio)">
+                    <div class="cont-imagen-servicio">
+                        <img class="imagen-servicio" [src]="servicio.imagen" (click)="cardClick(servicio)">
+                    </div>
                 </ion-card>
             </ion-slide>
         </ion-slides>
